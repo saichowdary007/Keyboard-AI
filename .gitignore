@@ -1,0 +1,52 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode / iOS
+DerivedData/
+**/xcuserdata/
+**/*.xcuserstate
+**/*.moved-aside
+**/*.xccheckout
+**/*.xcscmblueprint
+
+# Build artifacts
+build/
+*.metallib
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods (uncomment if you add Pods)
+# Pods/
+# Podfile.lock
+
+# Carthage (uncomment if you add Carthage)
+# Carthage/Build/
+
+# Fastlane (uncomment if you add Fastlane)
+# fastlane/report.xml
+# fastlane/Preview.html
+# fastlane/screenshots/
+# fastlane/test_output/
+
+# Logs and temporary
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Vendor build outputs (if any local builds are produced)
+Vendor/llama.cpp/build*/
+
+# Large local model files (keep placeholder files tracked)
+**/*.gguf
+!App/Models/.keep
+
+# XcodeGen generated workspace settings (keep project files but ignore user data)
+KeyboardAI.xcodeproj/project.xcworkspace/xcuserdata/

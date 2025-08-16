@@ -1,0 +1,249 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project KeyboardAI.xcodeproj -target KeyboardAI -configuration Debug -sdk iphoneos CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    SDKROOT = iphoneos18.5
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (3 targets)
+    Target 'KeyboardAI' in project 'KeyboardAI'
+        ➜ Explicit dependency on target 'Keyboard' in project 'KeyboardAI'
+        ➜ Explicit dependency on target 'Share' in project 'KeyboardAI'
+    Target 'Share' in project 'KeyboardAI' (no dependencies)
+    Target 'Keyboard' in project 'KeyboardAI' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c++ -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: d383fdf3572232527c62a493b80f8b4c
+Build description path: /Users/simba/Documents/keyboard ai/build/XCBuildData/d383fdf3572232527c62a493b80f8b4c.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-7fa4eea80a99bbfdc046826b63ec4baf.sdkstatcache
+    cd /Users/simba/Documents/keyboard\ ai/KeyboardAI.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -o /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-7fa4eea80a99bbfdc046826b63ec4baf.sdkstatcache
+
+ProcessInfoPlistFile /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Keyboard.appex/Info.plist /Users/simba/Documents/keyboard\ ai/KeyboardExtension/Info.plist (in target 'Keyboard' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-infoPlistUtility /Users/simba/Documents/keyboard\ ai/KeyboardExtension/Info.plist -producttype com.apple.product-type.app-extension -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Keyboard.appex/Info.plist
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI.hmap (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI.hmap
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-all-target-headers.hmap (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-project-headers.hmap (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-project-headers.hmap
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-generated-files.hmap (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-generated-files.hmap
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-own-target-headers.hmap (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI_const_extract_protocols.json (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.LinkFileList (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.LinkFileList
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI-OutputFileMap.json (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.SwiftFileList (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.SwiftFileList
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.SwiftConstValuesFileList (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI.DependencyStaticMetadataFileList (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI.DependencyMetadataFileList (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-all-non-framework-target-headers.hmap (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    write-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-all-non-framework-target-headers.hmap
+
+ProcessInfoPlistFile /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex/Info.plist /Users/simba/Documents/keyboard\ ai/ShareExtension/Info.plist (in target 'Share' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-infoPlistUtility /Users/simba/Documents/keyboard\ ai/ShareExtension/Info.plist -producttype com.apple.product-type.app-extension -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex/Info.plist
+
+MkDir /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /bin/mkdir -p /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app
+
+MkDir /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /bin/mkdir -p /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns
+
+CpResource /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/gemma-3-270m-it.gguf /Users/simba/Documents/keyboard\ ai/App/Models/gemma-3-270m-it.gguf (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/simba/Documents/keyboard\ ai/App/Models/gemma-3-270m-it.gguf /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app
+
+SwiftDriver KeyboardAI normal arm64 com.apple.xcode.tools.swift.compiler (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name KeyboardAI -Onone -enforce-exclusivity\=checked @/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -target arm64-apple-ios16.0 -g -Xfrontend -serialize-debugging-options -enable-testing -swift-version 5 -I /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos -F /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-7fa4eea80a99bbfdc046826b63ec4baf.sdkstatcache -output-file-map /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.swiftmodule -validate-clang-modules-once -clang-build-session-file /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI_const_extract_protocols.json -Xcc -iquote -Xcc /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-generated-files.hmap -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-own-target-headers.hmap -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-all-target-headers.hmap -Xcc -iquote -Xcc /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-project-headers.hmap -Xcc -I/Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/include -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/DerivedSources-normal/arm64 -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/DerivedSources/arm64 -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI-Swift.h -working-directory /Users/simba/Documents/keyboard\ ai -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ KeyboardAIApp.swift /Users/simba/Documents/keyboard\ ai/App/KeyboardAIApp.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+
+SwiftCompile normal arm64 /Users/simba/Documents/keyboard\ ai/App/KeyboardAIApp.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    
+
+SwiftCompile normal arm64 Compiling\ ModelInstaller.swift /Users/simba/Documents/keyboard\ ai/App/ModelInstaller.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+SwiftCompile normal arm64 /Users/simba/Documents/keyboard\ ai/App/ModelInstaller.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    
+
+SwiftCompile normal arm64 Compiling\ SharedModels.swift /Users/simba/Documents/keyboard\ ai/Shared/SharedModels.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+
+SwiftCompile normal arm64 /Users/simba/Documents/keyboard\ ai/Shared/SharedModels.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ KeyboardAI (in target 'KeyboardAI' from project 'KeyboardAI')
+
+EmitSwiftModule normal arm64 (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    
+
+SwiftCompile normal arm64 Compiling\ SettingsView.swift /Users/simba/Documents/keyboard\ ai/App/SettingsView.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+
+SwiftCompile normal arm64 /Users/simba/Documents/keyboard\ ai/App/SettingsView.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for KeyboardAI (in target 'KeyboardAI' from project 'KeyboardAI')
+
+SwiftDriver\ Compilation\ Requirements KeyboardAI normal arm64 com.apple.xcode.tools.swift.compiler (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name KeyboardAI -Onone -enforce-exclusivity\=checked @/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -target arm64-apple-ios16.0 -g -Xfrontend -serialize-debugging-options -enable-testing -swift-version 5 -I /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos -F /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-7fa4eea80a99bbfdc046826b63ec4baf.sdkstatcache -output-file-map /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.swiftmodule -validate-clang-modules-once -clang-build-session-file /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI_const_extract_protocols.json -Xcc -iquote -Xcc /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-generated-files.hmap -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-own-target-headers.hmap -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-all-target-headers.hmap -Xcc -iquote -Xcc /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-project-headers.hmap -Xcc -I/Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/include -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/DerivedSources-normal/arm64 -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/DerivedSources/arm64 -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI-Swift.h -working-directory /Users/simba/Documents/keyboard\ ai -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/DerivedSources/KeyboardAI-Swift.h /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI-Swift.h (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-swiftHeaderTool -arch arm64 /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI-Swift.h -o /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/DerivedSources/KeyboardAI-Swift.h
+
+Copy /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.swiftmodule/arm64-apple-ios.swiftmodule /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.swiftmodule (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.swiftmodule /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.swiftmodule/arm64-apple-ios.swiftmodule
+
+Copy /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.swiftmodule/arm64-apple-ios.swiftdoc /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.swiftdoc (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.swiftdoc /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.swiftmodule/arm64-apple-ios.swiftdoc
+
+Copy /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.swiftmodule/arm64-apple-ios.abi.json /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.abi.json (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.abi.json /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.swiftmodule/arm64-apple-ios.abi.json
+
+Copy /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.swiftsourceinfo (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.swiftsourceinfo /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling SettingsView.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SharedModels.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling KeyboardAIApp.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ModelInstaller.swift (in target 'KeyboardAI' from project 'KeyboardAI')
+
+SwiftDriver\ Compilation KeyboardAI normal arm64 com.apple.xcode.tools.swift.compiler (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name KeyboardAI -Onone -enforce-exclusivity\=checked @/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -target arm64-apple-ios16.0 -g -Xfrontend -serialize-debugging-options -enable-testing -swift-version 5 -I /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos -F /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-7fa4eea80a99bbfdc046826b63ec4baf.sdkstatcache -output-file-map /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.swiftmodule -validate-clang-modules-once -clang-build-session-file /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI_const_extract_protocols.json -Xcc -iquote -Xcc /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-generated-files.hmap -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-own-target-headers.hmap -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-all-target-headers.hmap -Xcc -iquote -Xcc /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI-project-headers.hmap -Xcc -I/Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/include -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/DerivedSources-normal/arm64 -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/DerivedSources/arm64 -Xcc -I/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI-Swift.h -working-directory /Users/simba/Documents/keyboard\ ai -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/KeyboardAI normal (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios16.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -O0 -L/Users/simba/Documents/keyboard\ ai/build/EagerLinkingTBDs/Debug-iphoneos -L/Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos -F/Users/simba/Documents/keyboard\ ai/build/EagerLinkingTBDs/Debug-iphoneos -F/Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos -filelist /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.LinkFileList -Xlinker -rpath -Xlinker @executable_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.swiftmodule -o /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/KeyboardAI
+
+Copy /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns/Keyboard.appex /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Keyboard.appex (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks -remove-static-executable /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Keyboard.appex /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns
+
+Copy /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns/Share.appex /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks -remove-static-executable /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns
+
+ProcessInfoPlistFile /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/Info.plist /Users/simba/Documents/keyboard\ ai/App/Info.plist (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-infoPlistUtility /Users/simba/Documents/keyboard\ ai/App/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -scanforprivacyfile /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns/Keyboard.appex -scanforprivacyfile /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns/Share.appex -requiredArchitecture arm64 -o /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/Info.plist
+
+CopySwiftLibs /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/KeyboardAI --scan-folder /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/Frameworks --scan-folder /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns --scan-folder /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/SystemExtensions --scan-folder /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/Extensions --platform iphoneos --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name KeyboardAI --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk --xcode-version 16F6 --platform-family iOS --deployment-target 16.0 --bundle-identifier com.yourco.KeyboardAI --output /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app --target-triple arm64-apple-ios16.0 --binary-file /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/KeyboardAI --dependency-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI_dependency_info.dat --stringsdata-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.SwiftFileList --metadata-file-list /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI.DependencyMetadataFileList --static-metadata-file-list /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI.DependencyStaticMetadataFileList --swift-const-vals-list /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/Objects-normal/arm64/KeyboardAI.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2025-08-16 02:50:26.597 appintentsmetadataprocessor[19498:8584670] Starting appintentsmetadataprocessor export
+2025-08-16 02:50:26.598 appintentsmetadataprocessor[19498:8584670] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+ValidateEmbeddedBinary /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns/Share.appex (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /Applications/Xcode.app/Contents/Developer/usr/bin/embeddedBinaryValidationUtility /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns/Share.appex -info-plist-path /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/Info.plist
+
+ValidateEmbeddedBinary /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns/Keyboard.appex (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /Applications/Xcode.app/Contents/Developer/usr/bin/embeddedBinaryValidationUtility /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/PlugIns/Keyboard.appex -info-plist-path /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/Info.plist
+
+AppIntentsSSUTraining (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/Info.plist --temp-dir-path /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/ssu --bundle-id com.yourco.KeyboardAI --product-path /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app --extracted-metadata-path /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app/Metadata.appintents --metadata-file-list /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/KeyboardAI.build/KeyboardAI.DependencyMetadataFileList --archive-ssu-assets
+2025-08-16 02:50:26.616 appintentsnltrainingprocessor[19501:8584673] Parsing options for appintentsnltrainingprocessor
+2025-08-16 02:50:26.618 appintentsnltrainingprocessor[19501:8584673] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-RegisterExecutionPolicyException /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app
+
+Validate /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-validationUtility /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app -infoplist-subpath Info.plist
+warning: All interface orientations must be supported unless the app requires full screen. (in target 'KeyboardAI' from project 'KeyboardAI')
+warning: A launch configuration or launch storyboard or xib must be provided unless the app requires full screen. (in target 'KeyboardAI' from project 'KeyboardAI')
+
+Touch /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app (in target 'KeyboardAI' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /usr/bin/touch -c /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/KeyboardAI.app
+
+** BUILD SUCCEEDED **
+

@@ -1,0 +1,5 @@
+dependencies: \
+  /Users/simba/Documents/keyboard\ ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.metal \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/metal/32023/lib/clang/32023.620/include/metal/module.modulemap \
+  /Users/simba/Documents/keyboard\ ai/Vendor/llama.cpp/ggml/src/ggml-common.h \
+  /Users/simba/Documents/keyboard\ ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal-impl.h

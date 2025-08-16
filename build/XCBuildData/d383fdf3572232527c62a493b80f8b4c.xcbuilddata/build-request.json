@@ -1,0 +1,51 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "27ee945eeef8cce861647ed0b3555d8a99aee363707e78bc0d2ea2a0903e4168"
+    },
+    {
+      "guid" : "27ee945eeef8cce861647ed0b3555d8a3ce631b510142d5073335818d1b1c31c"
+    },
+    {
+      "guid" : "27ee945eeef8cce861647ed0b3555d8adf85953078f73ca738901393758a3bf9"
+    },
+    {
+      "guid" : "27ee945eeef8cce861647ed0b3555d8a99aee363707e78bc0d2ea2a0903e4168"
+    }
+  ],
+  "containerPath" : "/Users/simba/Documents/keyboard ai/KeyboardAI.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "CODE_SIGNING_ALLOWED" : "NO",
+          "CODE_SIGNING_REQUIRED" : "NO",
+          "SDKROOT" : "iphoneos18.5"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

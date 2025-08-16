@@ -1,0 +1,1409 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project KeyboardAI.xcodeproj -target Share -configuration Debug -sdk iphoneos CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    SDKROOT = iphoneos18.5
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'Share' in project 'KeyboardAI' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-7fa4eea80a99bbfdc046826b63ec4baf.sdkstatcache
+    cd /Users/simba/Documents/keyboard\ ai/KeyboardAI.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -o /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-7fa4eea80a99bbfdc046826b63ec4baf.sdkstatcache
+
+ScanDependencies /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/ggml-metal-ffe745fbc08b4e47a70d50d7099eeb96.o /Users/simba/Documents/keyboard\ ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'Share' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    
+    Using response file: /Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    builtin-ScanDependencies -o /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/ggml-metal-ffe745fbc08b4e47a70d50d7099eeb96.o.scan -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-7fa4eea80a99bbfdc046826b63ec4baf.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Werror\=return-type -Wdocumentation -Wunreachable-code -Wquoted-include-in-framework-header -Wno-implicit-atomic-properties -Werror\=deprecated-objc-isa-usage -Wno-objc-interface-ivars -Werror\=objc-root-class -Wno-arc-repeated-use-of-weak -Wimplicit-retain-self -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-float-conversion -Wnon-literal-null-conversion -Wobjc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wdeprecated-implementations -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Winfinite-recursion -Wcomma -Wblock-capture-autoreleasing -Wstrict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability @/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/ggml-metal-ffe745fbc08b4e47a70d50d7099eeb96.d --serialize-diagnostics /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/ggml-metal-ffe745fbc08b4e47a70d50d7099eeb96.dia -c /Users/simba/Documents/keyboard\ ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m -o /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/ggml-metal-ffe745fbc08b4e47a70d50d7099eeb96.o
+
+CompileC /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/ggml-metal-ffe745fbc08b4e47a70d50d7099eeb96.o /Users/simba/Documents/keyboard\ ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'Share' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    
+    Using response file: /Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-7fa4eea80a99bbfdc046826b63ec4baf.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/var/folders/bm/_djq72lx2q59lkw6vqmm2c_40000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Werror\=return-type -Wdocumentation -Wunreachable-code -Wquoted-include-in-framework-header -Wno-implicit-atomic-properties -Werror\=deprecated-objc-isa-usage -Wno-objc-interface-ivars -Werror\=objc-root-class -Wno-arc-repeated-use-of-weak -Wimplicit-retain-self -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-float-conversion -Wnon-literal-null-conversion -Wobjc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wdeprecated-implementations -Wno-implicit-fallthrough -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Winfinite-recursion -Wcomma -Wblock-capture-autoreleasing -Wstrict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability @/Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/ggml-metal-ffe745fbc08b4e47a70d50d7099eeb96.d --serialize-diagnostics /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/ggml-metal-ffe745fbc08b4e47a70d50d7099eeb96.dia -c /Users/simba/Documents/keyboard\ ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m -o /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/ggml-metal-ffe745fbc08b4e47a70d50d7099eeb96.o
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:704:24: warning: unused variable 'buf' [-Wunused-variable]
+  704 |     for (id<MTLBuffer> buf in heap->bufs) {
+      |                        ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2200:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                     /*.ne3  =*/ ne3,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2199:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                     /*.ne2  =*/ ne2,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2198:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                     /*.ne1  =*/ ne1,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2197:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                     /*.ne0  =*/ ne0,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2192:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                 ggml_metal_kargs_concat args = {
+      |                                                ~
+ 2181 |                     /*.ne00 =*/ ne00,
+ 2182 |                     /*.ne01 =*/ ne01,
+ 2183 |                     /*.ne02 =*/ ne02,
+ 2184 |                     /*.ne03 =*/ ne03,
+ 2185 |                     /*.nb00 =*/ nb00,
+ 2186 |                     /*.nb01 =*/ nb01,
+ 2187 |                     /*.nb02 =*/ nb02,
+ 2188 |                     /*.nb03 =*/ nb03,
+ 2189 |                     /*.ne10 =*/ ne10,
+ 2190 |                     /*.ne11 =*/ ne11,
+ 2191 |                     /*.ne12 =*/ ne12,
+ 2192 |                     /*.ne13 =*/ ne13,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2191:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                 ggml_metal_kargs_concat args = {
+      |                                                ~
+ 2181 |                     /*.ne00 =*/ ne00,
+ 2182 |                     /*.ne01 =*/ ne01,
+ 2183 |                     /*.ne02 =*/ ne02,
+ 2184 |                     /*.ne03 =*/ ne03,
+ 2185 |                     /*.nb00 =*/ nb00,
+ 2186 |                     /*.nb01 =*/ nb01,
+ 2187 |                     /*.nb02 =*/ nb02,
+ 2188 |                     /*.nb03 =*/ nb03,
+ 2189 |                     /*.ne10 =*/ ne10,
+ 2190 |                     /*.ne11 =*/ ne11,
+ 2191 |                     /*.ne12 =*/ ne12,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2190:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                 ggml_metal_kargs_concat args = {
+      |                                                ~
+ 2181 |                     /*.ne00 =*/ ne00,
+ 2182 |                     /*.ne01 =*/ ne01,
+ 2183 |                     /*.ne02 =*/ ne02,
+ 2184 |                     /*.ne03 =*/ ne03,
+ 2185 |                     /*.nb00 =*/ nb00,
+ 2186 |                     /*.nb01 =*/ nb01,
+ 2187 |                     /*.nb02 =*/ nb02,
+ 2188 |                     /*.nb03 =*/ nb03,
+ 2189 |                     /*.ne10 =*/ ne10,
+ 2190 |                     /*.ne11 =*/ ne11,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2189:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                 ggml_metal_kargs_concat args = {
+      |                                                ~
+ 2181 |                     /*.ne00 =*/ ne00,
+ 2182 |                     /*.ne01 =*/ ne01,
+ 2183 |                     /*.ne02 =*/ ne02,
+ 2184 |                     /*.ne03 =*/ ne03,
+ 2185 |                     /*.nb00 =*/ nb00,
+ 2186 |                     /*.nb01 =*/ nb01,
+ 2187 |                     /*.nb02 =*/ nb02,
+ 2188 |                     /*.nb03 =*/ nb03,
+ 2189 |                     /*.ne10 =*/ ne10,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2184:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                 ggml_metal_kargs_concat args = {
+      |                                                ~
+ 2181 |                     /*.ne00 =*/ ne00,
+ 2182 |                     /*.ne01 =*/ ne01,
+ 2183 |                     /*.ne02 =*/ ne02,
+ 2184 |                     /*.ne03 =*/ ne03,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2183:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                 ggml_metal_kargs_concat args = {
+      |                                                ~
+ 2181 |                     /*.ne00 =*/ ne00,
+ 2182 |                     /*.ne01 =*/ ne01,
+ 2183 |                     /*.ne02 =*/ ne02,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2182:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                 ggml_metal_kargs_concat args = {
+      |                                                ~
+ 2181 |                     /*.ne00 =*/ ne00,
+ 2182 |                     /*.ne01 =*/ ne01,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2181:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2180 |                 ggml_metal_kargs_concat args = {
+      |                                                ~
+ 2181 |                     /*.ne00 =*/ ne00,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2214:43: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 2214 |                 const int nth = MIN(1024, ne0);
+      |                           ~~~             ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2255:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                     /*.ne3  =*/ ne3,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2254:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                     /*.ne2  =*/ ne2,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2253:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                     /*.ne1  =*/ ne1,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2252:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                     /*.ne0  =*/ ne0,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2247:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2236 |                     /*.ne00 =*/ ne00,
+ 2237 |                     /*.ne01 =*/ ne01,
+ 2238 |                     /*.ne02 =*/ ne02,
+ 2239 |                     /*.ne03 =*/ ne03,
+ 2240 |                     /*.nb00 =*/ nb00,
+ 2241 |                     /*.nb01 =*/ nb01,
+ 2242 |                     /*.nb02 =*/ nb02,
+ 2243 |                     /*.nb03 =*/ nb03,
+ 2244 |                     /*.ne10 =*/ ne10,
+ 2245 |                     /*.ne11 =*/ ne11,
+ 2246 |                     /*.ne12 =*/ ne12,
+ 2247 |                     /*.ne13 =*/ ne13,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2246:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2236 |                     /*.ne00 =*/ ne00,
+ 2237 |                     /*.ne01 =*/ ne01,
+ 2238 |                     /*.ne02 =*/ ne02,
+ 2239 |                     /*.ne03 =*/ ne03,
+ 2240 |                     /*.nb00 =*/ nb00,
+ 2241 |                     /*.nb01 =*/ nb01,
+ 2242 |                     /*.nb02 =*/ nb02,
+ 2243 |                     /*.nb03 =*/ nb03,
+ 2244 |                     /*.ne10 =*/ ne10,
+ 2245 |                     /*.ne11 =*/ ne11,
+ 2246 |                     /*.ne12 =*/ ne12,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2245:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2236 |                     /*.ne00 =*/ ne00,
+ 2237 |                     /*.ne01 =*/ ne01,
+ 2238 |                     /*.ne02 =*/ ne02,
+ 2239 |                     /*.ne03 =*/ ne03,
+ 2240 |                     /*.nb00 =*/ nb00,
+ 2241 |                     /*.nb01 =*/ nb01,
+ 2242 |                     /*.nb02 =*/ nb02,
+ 2243 |                     /*.nb03 =*/ nb03,
+ 2244 |                     /*.ne10 =*/ ne10,
+ 2245 |                     /*.ne11 =*/ ne11,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2244:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2236 |                     /*.ne00 =*/ ne00,
+ 2237 |                     /*.ne01 =*/ ne01,
+ 2238 |                     /*.ne02 =*/ ne02,
+ 2239 |                     /*.ne03 =*/ ne03,
+ 2240 |                     /*.nb00 =*/ nb00,
+ 2241 |                     /*.nb01 =*/ nb01,
+ 2242 |                     /*.nb02 =*/ nb02,
+ 2243 |                     /*.nb03 =*/ nb03,
+ 2244 |                     /*.ne10 =*/ ne10,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2239:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2236 |                     /*.ne00 =*/ ne00,
+ 2237 |                     /*.ne01 =*/ ne01,
+ 2238 |                     /*.ne02 =*/ ne02,
+ 2239 |                     /*.ne03 =*/ ne03,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2238:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2236 |                     /*.ne00 =*/ ne00,
+ 2237 |                     /*.ne01 =*/ ne01,
+ 2238 |                     /*.ne02 =*/ ne02,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2237:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2236 |                     /*.ne00 =*/ ne00,
+ 2237 |                     /*.ne01 =*/ ne01,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2236:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2235 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2236 |                     /*.ne00 =*/ ne00,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2418:83: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 2418 |                 const int nth = MIN((int) pipeline.maxTotalThreadsPerThreadgroup, ne00);
+      |                           ~~~                                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2446:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2434 |                 ggml_metal_kargs_repeat args = {
+      |                                                ~
+ 2435 |                     /*.ne00 =*/ ne00,
+ 2436 |                     /*.ne01 =*/ ne01,
+ 2437 |                     /*.ne02 =*/ ne02,
+ 2438 |                     /*.ne03 =*/ ne03,
+ 2439 |                     /*.nb00 =*/ nb00,
+ 2440 |                     /*.nb01 =*/ nb01,
+ 2441 |                     /*.nb02 =*/ nb02,
+ 2442 |                     /*.nb03 =*/ nb03,
+ 2443 |                     /*.ne0  =*/ ne0,
+ 2444 |                     /*.ne1  =*/ ne1,
+ 2445 |                     /*.ne2  =*/ ne2,
+ 2446 |                     /*.ne3  =*/ ne3,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2445:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2434 |                 ggml_metal_kargs_repeat args = {
+      |                                                ~
+ 2435 |                     /*.ne00 =*/ ne00,
+ 2436 |                     /*.ne01 =*/ ne01,
+ 2437 |                     /*.ne02 =*/ ne02,
+ 2438 |                     /*.ne03 =*/ ne03,
+ 2439 |                     /*.nb00 =*/ nb00,
+ 2440 |                     /*.nb01 =*/ nb01,
+ 2441 |                     /*.nb02 =*/ nb02,
+ 2442 |                     /*.nb03 =*/ nb03,
+ 2443 |                     /*.ne0  =*/ ne0,
+ 2444 |                     /*.ne1  =*/ ne1,
+ 2445 |                     /*.ne2  =*/ ne2,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2444:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2434 |                 ggml_metal_kargs_repeat args = {
+      |                                                ~
+ 2435 |                     /*.ne00 =*/ ne00,
+ 2436 |                     /*.ne01 =*/ ne01,
+ 2437 |                     /*.ne02 =*/ ne02,
+ 2438 |                     /*.ne03 =*/ ne03,
+ 2439 |                     /*.nb00 =*/ nb00,
+ 2440 |                     /*.nb01 =*/ nb01,
+ 2441 |                     /*.nb02 =*/ nb02,
+ 2442 |                     /*.nb03 =*/ nb03,
+ 2443 |                     /*.ne0  =*/ ne0,
+ 2444 |                     /*.ne1  =*/ ne1,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2443:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2434 |                 ggml_metal_kargs_repeat args = {
+      |                                                ~
+ 2435 |                     /*.ne00 =*/ ne00,
+ 2436 |                     /*.ne01 =*/ ne01,
+ 2437 |                     /*.ne02 =*/ ne02,
+ 2438 |                     /*.ne03 =*/ ne03,
+ 2439 |                     /*.nb00 =*/ nb00,
+ 2440 |                     /*.nb01 =*/ nb01,
+ 2441 |                     /*.nb02 =*/ nb02,
+ 2442 |                     /*.nb03 =*/ nb03,
+ 2443 |                     /*.ne0  =*/ ne0,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2438:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2434 |                 ggml_metal_kargs_repeat args = {
+      |                                                ~
+ 2435 |                     /*.ne00 =*/ ne00,
+ 2436 |                     /*.ne01 =*/ ne01,
+ 2437 |                     /*.ne02 =*/ ne02,
+ 2438 |                     /*.ne03 =*/ ne03,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2437:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2434 |                 ggml_metal_kargs_repeat args = {
+      |                                                ~
+ 2435 |                     /*.ne00 =*/ ne00,
+ 2436 |                     /*.ne01 =*/ ne01,
+ 2437 |                     /*.ne02 =*/ ne02,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2436:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2434 |                 ggml_metal_kargs_repeat args = {
+      |                                                ~
+ 2435 |                     /*.ne00 =*/ ne00,
+ 2436 |                     /*.ne01 =*/ ne01,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2435:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2434 |                 ggml_metal_kargs_repeat args = {
+      |                                                ~
+ 2435 |                     /*.ne00 =*/ ne00,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2458:83: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 2458 |                 const int nth = MIN((int) pipeline.maxTotalThreadsPerThreadgroup, ne0);
+      |                           ~~~                                                     ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2509:87: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 2509 |                     const int nth = MIN((int) pipeline.maxTotalThreadsPerThreadgroup, ne00);
+      |                               ~~~                                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2536:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                     /*.ne3  =*/ ne3,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2535:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                     /*.ne2  =*/ ne2,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2534:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                     /*.ne1  =*/ ne1,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2533:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                     /*.ne0  =*/ ne0,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2528:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2517 |                     /*.ne00 =*/ ne00,
+ 2518 |                     /*.ne01 =*/ ne01,
+ 2519 |                     /*.ne02 =*/ ne02,
+ 2520 |                     /*.ne03 =*/ ne03,
+ 2521 |                     /*.nb00 =*/ nb00,
+ 2522 |                     /*.nb01 =*/ pnb1,
+ 2523 |                     /*.nb02 =*/ pnb2,
+ 2524 |                     /*.nb03 =*/ pnb3,
+ 2525 |                     /*.ne10 =*/ ne10,
+ 2526 |                     /*.ne11 =*/ ne11,
+ 2527 |                     /*.ne12 =*/ ne12,
+ 2528 |                     /*.ne13 =*/ ne13,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2527:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2517 |                     /*.ne00 =*/ ne00,
+ 2518 |                     /*.ne01 =*/ ne01,
+ 2519 |                     /*.ne02 =*/ ne02,
+ 2520 |                     /*.ne03 =*/ ne03,
+ 2521 |                     /*.nb00 =*/ nb00,
+ 2522 |                     /*.nb01 =*/ pnb1,
+ 2523 |                     /*.nb02 =*/ pnb2,
+ 2524 |                     /*.nb03 =*/ pnb3,
+ 2525 |                     /*.ne10 =*/ ne10,
+ 2526 |                     /*.ne11 =*/ ne11,
+ 2527 |                     /*.ne12 =*/ ne12,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2526:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2517 |                     /*.ne00 =*/ ne00,
+ 2518 |                     /*.ne01 =*/ ne01,
+ 2519 |                     /*.ne02 =*/ ne02,
+ 2520 |                     /*.ne03 =*/ ne03,
+ 2521 |                     /*.nb00 =*/ nb00,
+ 2522 |                     /*.nb01 =*/ pnb1,
+ 2523 |                     /*.nb02 =*/ pnb2,
+ 2524 |                     /*.nb03 =*/ pnb3,
+ 2525 |                     /*.ne10 =*/ ne10,
+ 2526 |                     /*.ne11 =*/ ne11,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2525:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2517 |                     /*.ne00 =*/ ne00,
+ 2518 |                     /*.ne01 =*/ ne01,
+ 2519 |                     /*.ne02 =*/ ne02,
+ 2520 |                     /*.ne03 =*/ ne03,
+ 2521 |                     /*.nb00 =*/ nb00,
+ 2522 |                     /*.nb01 =*/ pnb1,
+ 2523 |                     /*.nb02 =*/ pnb2,
+ 2524 |                     /*.nb03 =*/ pnb3,
+ 2525 |                     /*.ne10 =*/ ne10,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2520:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2517 |                     /*.ne00 =*/ ne00,
+ 2518 |                     /*.ne01 =*/ ne01,
+ 2519 |                     /*.ne02 =*/ ne02,
+ 2520 |                     /*.ne03 =*/ ne03,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2519:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2517 |                     /*.ne00 =*/ ne00,
+ 2518 |                     /*.ne01 =*/ ne01,
+ 2519 |                     /*.ne02 =*/ ne02,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2518:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2517 |                     /*.ne00 =*/ ne00,
+ 2518 |                     /*.ne01 =*/ ne01,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2517:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2516 |                 ggml_metal_kargs_bin args = {
+      |                                             ~
+ 2517 |                     /*.ne00 =*/ ne00,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2551:83: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 2551 |                 const int nth = MIN((int) pipeline.maxTotalThreadsPerThreadgroup, ne00);
+      |                           ~~~                                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2858:43: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2858 |                 const int32_t i00 = swp ? ne0 : 0;
+      |                               ~~~         ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2859:47: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2859 |                 const int32_t i10 = swp ? 0 : ne0;
+      |                               ~~~             ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2866:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2861 |                 ggml_metal_kargs_glu args = {
+      |                                             ~
+ 2862 |                     /*.ne00 =*/ ne00,
+ 2863 |                     /*.nb01 =*/ nb01,
+ 2864 |                     /*.ne10 =*/ src1 ? ne10 : ne00,
+ 2865 |                     /*.nb11 =*/ src1 ? nb11 : nb01,
+ 2866 |                     /*.ne0  =*/ ne0,
+      |                                 ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2864:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2861 |                 ggml_metal_kargs_glu args = {
+      |                                             ~
+ 2862 |                     /*.ne00 =*/ ne00,
+ 2863 |                     /*.nb01 =*/ nb01,
+ 2864 |                     /*.ne10 =*/ src1 ? ne10 : ne00,
+      |                                        ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2864:47: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2861 |                 ggml_metal_kargs_glu args = {
+      |                                             ~
+ 2862 |                     /*.ne00 =*/ ne00,
+ 2863 |                     /*.nb01 =*/ nb01,
+ 2864 |                     /*.ne10 =*/ src1 ? ne10 : ne00,
+      |                                               ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2862:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2861 |                 ggml_metal_kargs_glu args = {
+      |                                             ~
+ 2862 |                     /*.ne00 =*/ ne00,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2886:91: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 2886 |                 const int32_t nth = MIN((int) pipeline.maxTotalThreadsPerThreadgroup, ne00/2);
+      |                               ~~~                                                     ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:2971:32: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 2971 |                 nth = MIN(nth, ne00);
+      |                     ~          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3044:46: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3044 |                 const uint32_t n_head      = src0->ne[2];
+      |                                ~~~~~~        ^~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3109:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3100 |                 ggml_metal_kargs_soft_max args = {
+      |                                                  ~
+ 3101 |                     /*.ne00        =*/ ne00,
+ 3102 |                     /*.ne01        =*/ ne01,
+ 3103 |                     /*.ne02        =*/ ne02,
+ 3104 |                     /*.nb01        =*/ nb01,
+ 3105 |                     /*.nb02        =*/ nb02,
+ 3106 |                     /*.nb03        =*/ nb03,
+ 3107 |                     /*.ne11        =*/ ne11,
+ 3108 |                     /*.ne12        =*/ ne12,
+ 3109 |                     /*.ne13        =*/ ne13,
+      |                                        ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3108:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3100 |                 ggml_metal_kargs_soft_max args = {
+      |                                                  ~
+ 3101 |                     /*.ne00        =*/ ne00,
+ 3102 |                     /*.ne01        =*/ ne01,
+ 3103 |                     /*.ne02        =*/ ne02,
+ 3104 |                     /*.nb01        =*/ nb01,
+ 3105 |                     /*.nb02        =*/ nb02,
+ 3106 |                     /*.nb03        =*/ nb03,
+ 3107 |                     /*.ne11        =*/ ne11,
+ 3108 |                     /*.ne12        =*/ ne12,
+      |                                        ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3107:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3100 |                 ggml_metal_kargs_soft_max args = {
+      |                                                  ~
+ 3101 |                     /*.ne00        =*/ ne00,
+ 3102 |                     /*.ne01        =*/ ne01,
+ 3103 |                     /*.ne02        =*/ ne02,
+ 3104 |                     /*.nb01        =*/ nb01,
+ 3105 |                     /*.nb02        =*/ nb02,
+ 3106 |                     /*.nb03        =*/ nb03,
+ 3107 |                     /*.ne11        =*/ ne11,
+      |                                        ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3103:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3100 |                 ggml_metal_kargs_soft_max args = {
+      |                                                  ~
+ 3101 |                     /*.ne00        =*/ ne00,
+ 3102 |                     /*.ne01        =*/ ne01,
+ 3103 |                     /*.ne02        =*/ ne02,
+      |                                        ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3102:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3100 |                 ggml_metal_kargs_soft_max args = {
+      |                                                  ~
+ 3101 |                     /*.ne00        =*/ ne00,
+ 3102 |                     /*.ne01        =*/ ne01,
+      |                                        ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3101:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3100 |                 ggml_metal_kargs_soft_max args = {
+      |                                                  ~
+ 3101 |                     /*.ne00        =*/ ne00,
+      |                                        ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3415:41: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3415 |                 const uint32_t r2 = ne12/ne02;
+      |                                ~~   ~~~~^~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3416:41: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3416 |                 const uint32_t r3 = ne13/ne03;
+      |                                ~~   ~~~~^~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3586:38: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3570 |                         /*.ne1   =*/ ne1,
+      |                                      ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3585:38: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3570 |                     ggml_metal_kargs_mul_mv_ext args = {
+      |                                                        ~
+ 3571 |                         /*.ne00  =*/ ne00,
+ 3572 |                         /*.ne01  =*/ ne01,
+ 3573 |                         /*.ne02  =*/ ne02,
+ 3574 |                         /*.nb00  =*/ nb00,
+ 3575 |                         /*.nb01  =*/ nb01,
+ 3576 |                         /*.nb02  =*/ nb02,
+ 3577 |                         /*.nb03  =*/ nb03,
+ 3578 |                         /*.ne10  =*/ ne10,
+ 3579 |                         /*.ne11  =*/ ne11,
+ 3580 |                         /*.ne12  =*/ ne12,
+ 3581 |                         /*.nb10  =*/ nb10,
+ 3582 |                         /*.nb11  =*/ nb11,
+ 3583 |                         /*.nb12  =*/ nb12,
+ 3584 |                         /*.nb13  =*/ nb13,
+ 3585 |                         /*.ne0   =*/ ne0,
+      |                                      ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3580:38: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3570 |                     ggml_metal_kargs_mul_mv_ext args = {
+      |                                                        ~
+ 3571 |                         /*.ne00  =*/ ne00,
+ 3572 |                         /*.ne01  =*/ ne01,
+ 3573 |                         /*.ne02  =*/ ne02,
+ 3574 |                         /*.nb00  =*/ nb00,
+ 3575 |                         /*.nb01  =*/ nb01,
+ 3576 |                         /*.nb02  =*/ nb02,
+ 3577 |                         /*.nb03  =*/ nb03,
+ 3578 |                         /*.ne10  =*/ ne10,
+ 3579 |                         /*.ne11  =*/ ne11,
+ 3580 |                         /*.ne12  =*/ ne12,
+      |                                      ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3579:38: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3570 |                     ggml_metal_kargs_mul_mv_ext args = {
+      |                                                        ~
+ 3571 |                         /*.ne00  =*/ ne00,
+ 3572 |                         /*.ne01  =*/ ne01,
+ 3573 |                         /*.ne02  =*/ ne02,
+ 3574 |                         /*.nb00  =*/ nb00,
+ 3575 |                         /*.nb01  =*/ nb01,
+ 3576 |                         /*.nb02  =*/ nb02,
+ 3577 |                         /*.nb03  =*/ nb03,
+ 3578 |                         /*.ne10  =*/ ne10,
+ 3579 |                         /*.ne11  =*/ ne11,
+      |                                      ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3578:38: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3570 |                     ggml_metal_kargs_mul_mv_ext args = {
+      |                                                        ~
+ 3571 |                         /*.ne00  =*/ ne00,
+ 3572 |                         /*.ne01  =*/ ne01,
+ 3573 |                         /*.ne02  =*/ ne02,
+ 3574 |                         /*.nb00  =*/ nb00,
+ 3575 |                         /*.nb01  =*/ nb01,
+ 3576 |                         /*.nb02  =*/ nb02,
+ 3577 |                         /*.nb03  =*/ nb03,
+ 3578 |                         /*.ne10  =*/ ne10,
+      |                                      ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3573:38: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3570 |                     ggml_metal_kargs_mul_mv_ext args = {
+      |                                                        ~
+ 3571 |                         /*.ne00  =*/ ne00,
+ 3572 |                         /*.ne01  =*/ ne01,
+ 3573 |                         /*.ne02  =*/ ne02,
+      |                                      ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3572:38: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3570 |                     ggml_metal_kargs_mul_mv_ext args = {
+      |                                                        ~
+ 3571 |                         /*.ne00  =*/ ne00,
+ 3572 |                         /*.ne01  =*/ ne01,
+      |                                      ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3571:38: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3570 |                     ggml_metal_kargs_mul_mv_ext args = {
+      |                                                        ~
+ 3571 |                         /*.ne00  =*/ ne00,
+      |                                      ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3663:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3651 |                     ggml_metal_kargs_mul_mm args = {
+      |                                                    ~
+ 3652 |                         /*.ne00 =*/ ne00,
+ 3653 |                         /*.ne02 =*/ ne02,
+ 3654 |                         /*.nb01 =*/ nb01,
+ 3655 |                         /*.nb02 =*/ nb02,
+ 3656 |                         /*.nb03 =*/ nb03,
+ 3657 |                         /*.ne12 =*/ ne12,
+ 3658 |                         /*.nb10 =*/ nb10,
+ 3659 |                         /*.nb11 =*/ nb11,
+ 3660 |                         /*.nb12 =*/ nb12,
+ 3661 |                         /*.nb13 =*/ nb13,
+ 3662 |                         /*.ne0  =*/ ne0,
+ 3663 |                         /*.ne1  =*/ ne1,
+      |                                     ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3662:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3651 |                     ggml_metal_kargs_mul_mm args = {
+      |                                                    ~
+ 3652 |                         /*.ne00 =*/ ne00,
+ 3653 |                         /*.ne02 =*/ ne02,
+ 3654 |                         /*.nb01 =*/ nb01,
+ 3655 |                         /*.nb02 =*/ nb02,
+ 3656 |                         /*.nb03 =*/ nb03,
+ 3657 |                         /*.ne12 =*/ ne12,
+ 3658 |                         /*.nb10 =*/ nb10,
+ 3659 |                         /*.nb11 =*/ nb11,
+ 3660 |                         /*.nb12 =*/ nb12,
+ 3661 |                         /*.nb13 =*/ nb13,
+ 3662 |                         /*.ne0  =*/ ne0,
+      |                                     ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3657:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3651 |                     ggml_metal_kargs_mul_mm args = {
+      |                                                    ~
+ 3652 |                         /*.ne00 =*/ ne00,
+ 3653 |                         /*.ne02 =*/ ne02,
+ 3654 |                         /*.nb01 =*/ nb01,
+ 3655 |                         /*.nb02 =*/ nb02,
+ 3656 |                         /*.nb03 =*/ nb03,
+ 3657 |                         /*.ne12 =*/ ne12,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3653:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3651 |                     ggml_metal_kargs_mul_mm args = {
+      |                                                    ~
+ 3652 |                         /*.ne00 =*/ ne00,
+ 3653 |                         /*.ne02 =*/ ne02,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3652:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3651 |                     ggml_metal_kargs_mul_mm args = {
+      |                                                    ~
+ 3652 |                         /*.ne00 =*/ ne00,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3713:47: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 3713 |                                         nr1 = ne11;
+      |                                             ~ ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3736:47: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 3736 |                                         nr1 = ne11;
+      |                                             ~ ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3896:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3880 |                         /*.ne1  =*/ ne1,
+      |                                     ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3895:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3880 |                     ggml_metal_kargs_mul_mv args = {
+      |                                                    ~
+ 3881 |                         /*.ne00 =*/ ne00,
+ 3882 |                         /*.ne01 =*/ ne01,
+ 3883 |                         /*.ne02 =*/ ne02,
+ 3884 |                         /*.nb00 =*/ nb00,
+ 3885 |                         /*.nb01 =*/ nb01,
+ 3886 |                         /*.nb02 =*/ nb02,
+ 3887 |                         /*.nb03 =*/ nb03,
+ 3888 |                         /*.ne10 =*/ ne10,
+ 3889 |                         /*.ne11 =*/ ne11,
+ 3890 |                         /*.ne12 =*/ ne12,
+ 3891 |                         /*.nb10 =*/ nb10,
+ 3892 |                         /*.nb11 =*/ nb11,
+ 3893 |                         /*.nb12 =*/ nb12,
+ 3894 |                         /*.nb13 =*/ nb13,
+ 3895 |                         /*.ne0  =*/ ne0,
+      |                                     ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3890:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3880 |                     ggml_metal_kargs_mul_mv args = {
+      |                                                    ~
+ 3881 |                         /*.ne00 =*/ ne00,
+ 3882 |                         /*.ne01 =*/ ne01,
+ 3883 |                         /*.ne02 =*/ ne02,
+ 3884 |                         /*.nb00 =*/ nb00,
+ 3885 |                         /*.nb01 =*/ nb01,
+ 3886 |                         /*.nb02 =*/ nb02,
+ 3887 |                         /*.nb03 =*/ nb03,
+ 3888 |                         /*.ne10 =*/ ne10,
+ 3889 |                         /*.ne11 =*/ ne11,
+ 3890 |                         /*.ne12 =*/ ne12,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3889:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3880 |                     ggml_metal_kargs_mul_mv args = {
+      |                                                    ~
+ 3881 |                         /*.ne00 =*/ ne00,
+ 3882 |                         /*.ne01 =*/ ne01,
+ 3883 |                         /*.ne02 =*/ ne02,
+ 3884 |                         /*.nb00 =*/ nb00,
+ 3885 |                         /*.nb01 =*/ nb01,
+ 3886 |                         /*.nb02 =*/ nb02,
+ 3887 |                         /*.nb03 =*/ nb03,
+ 3888 |                         /*.ne10 =*/ ne10,
+ 3889 |                         /*.ne11 =*/ ne11,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3888:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3880 |                     ggml_metal_kargs_mul_mv args = {
+      |                                                    ~
+ 3881 |                         /*.ne00 =*/ ne00,
+ 3882 |                         /*.ne01 =*/ ne01,
+ 3883 |                         /*.ne02 =*/ ne02,
+ 3884 |                         /*.nb00 =*/ nb00,
+ 3885 |                         /*.nb01 =*/ nb01,
+ 3886 |                         /*.nb02 =*/ nb02,
+ 3887 |                         /*.nb03 =*/ nb03,
+ 3888 |                         /*.ne10 =*/ ne10,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3883:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3880 |                     ggml_metal_kargs_mul_mv args = {
+      |                                                    ~
+ 3881 |                         /*.ne00 =*/ ne00,
+ 3882 |                         /*.ne01 =*/ ne01,
+ 3883 |                         /*.ne02 =*/ ne02,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3882:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3880 |                     ggml_metal_kargs_mul_mv args = {
+      |                                                    ~
+ 3881 |                         /*.ne00 =*/ ne00,
+ 3882 |                         /*.ne01 =*/ ne01,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3881:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 3880 |                     ggml_metal_kargs_mul_mv args = {
+      |                                                    ~
+ 3881 |                         /*.ne00 =*/ ne00,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4001:55: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+ 4001 |                         const int nth = MIN(1024, ne10/4);
+      |                                   ~~~             ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4010:29: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4003 |                         ggml_metal_kargs_mul_mm_id_map0 args = {
+      |                                                                ~
+ 4004 |                             ne10,
+ 4005 |                             ne11,  // n_expert_used (bcast)
+ 4006 |                             nb11,
+ 4007 |                             nb12,
+ 4008 |                             neh11, // n_tokens
+ 4009 |                             nbh11,
+ 4010 |                             ne20,  // n_expert_used
+      |                             ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4008:29: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4003 |                         ggml_metal_kargs_mul_mm_id_map0 args = {
+      |                                                                ~
+ 4004 |                             ne10,
+ 4005 |                             ne11,  // n_expert_used (bcast)
+ 4006 |                             nb11,
+ 4007 |                             nb12,
+ 4008 |                             neh11, // n_tokens
+      |                             ^~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4005:29: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4003 |                         ggml_metal_kargs_mul_mm_id_map0 args = {
+      |                                                                ~
+ 4004 |                             ne10,
+ 4005 |                             ne11,  // n_expert_used (bcast)
+      |                             ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4004:29: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4003 |                         ggml_metal_kargs_mul_mm_id_map0 args = {
+      |                                                                ~
+ 4004 |                             ne10,
+      |                             ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4071:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4059 |                         ggml_metal_kargs_mul_mm_id args = {
+      |                                                           ~
+ 4060 |                             /*.ne00  =*/ ne00,
+ 4061 |                             /*.ne02  =*/ ne02,
+ 4062 |                             /*.nb01  =*/ nb01,
+ 4063 |                             /*.nb02  =*/ nb02,
+ 4064 |                             /*.nb03  =*/ nb03,
+ 4065 |                             /*.neh12 =*/ neh12,
+ 4066 |                             /*.nbh10 =*/ nbh10,
+ 4067 |                             /*.nbh11 =*/ nbh11,
+ 4068 |                             /*.nbh12 =*/ nbh12,
+ 4069 |                             /*.nbh13 =*/ nbh13,
+ 4070 |                             /*.neh0  =*/ neh0,
+ 4071 |                             /*.neh1  =*/ neh1,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4070:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4059 |                         ggml_metal_kargs_mul_mm_id args = {
+      |                                                           ~
+ 4060 |                             /*.ne00  =*/ ne00,
+ 4061 |                             /*.ne02  =*/ ne02,
+ 4062 |                             /*.nb01  =*/ nb01,
+ 4063 |                             /*.nb02  =*/ nb02,
+ 4064 |                             /*.nb03  =*/ nb03,
+ 4065 |                             /*.neh12 =*/ neh12,
+ 4066 |                             /*.nbh10 =*/ nbh10,
+ 4067 |                             /*.nbh11 =*/ nbh11,
+ 4068 |                             /*.nbh12 =*/ nbh12,
+ 4069 |                             /*.nbh13 =*/ nbh13,
+ 4070 |                             /*.neh0  =*/ neh0,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4065:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4059 |                         ggml_metal_kargs_mul_mm_id args = {
+      |                                                           ~
+ 4060 |                             /*.ne00  =*/ ne00,
+ 4061 |                             /*.ne02  =*/ ne02,
+ 4062 |                             /*.nb01  =*/ nb01,
+ 4063 |                             /*.nb02  =*/ nb02,
+ 4064 |                             /*.nb03  =*/ nb03,
+ 4065 |                             /*.neh12 =*/ neh12,
+      |                                          ^~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4061:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4059 |                         ggml_metal_kargs_mul_mm_id args = {
+      |                                                           ~
+ 4060 |                             /*.ne00  =*/ ne00,
+ 4061 |                             /*.ne02  =*/ ne02,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4060:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4059 |                         ggml_metal_kargs_mul_mm_id args = {
+      |                                                           ~
+ 4060 |                             /*.ne00  =*/ ne00,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4090:54: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+ 4090 |                         const int nth = MIN(1024, ne0/4);
+      |                                   ~~~             ~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4098:29: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4092 |                         ggml_metal_kargs_mul_mm_id_map1 args = {
+      |                                                                ~
+ 4093 |                             ne20, // n_expert_used
+ 4094 |                             neh0,
+ 4095 |                             neh1,
+ 4096 |                             nbh1,
+ 4097 |                             nbh2,
+ 4098 |                             ne0,
+      |                             ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4095:29: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4092 |                         ggml_metal_kargs_mul_mm_id_map1 args = {
+      |                                                                ~
+ 4093 |                             ne20, // n_expert_used
+ 4094 |                             neh0,
+ 4095 |                             neh1,
+      |                             ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4094:29: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4092 |                         ggml_metal_kargs_mul_mm_id_map1 args = {
+      |                                                                ~
+ 4093 |                             ne20, // n_expert_used
+ 4094 |                             neh0,
+      |                             ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4093:29: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4092 |                         ggml_metal_kargs_mul_mm_id_map1 args = {
+      |                                                                ~
+ 4093 |                             ne20, // n_expert_used
+      |                             ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4303:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4285 |                         /*.ne1  =*/ ne1,
+      |                                     ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4302:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4285 |                         /*.ne0  =*/ ne0,
+      |                                     ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4298:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4285 |                     ggml_metal_kargs_mul_mv_id args = {
+      |                                                       ~
+ 4286 |                         /*.nei0 =*/ ne20,
+ 4287 |                         /*.nei1 =*/ ne21,
+ 4288 |                         /*.nbi1 =*/ nb21,
+ 4289 |                         /*.ne00 =*/ ne00,
+ 4290 |                         /*.ne01 =*/ ne01,
+ 4291 |                         /*.ne02 =*/ ne02,
+ 4292 |                         /*.nb00 =*/ nb00,
+ 4293 |                         /*.nb01 =*/ nb01,
+ 4294 |                         /*.nb02 =*/ nb02,
+ 4295 |                         /*.ne10 =*/ ne10,
+ 4296 |                         /*.ne11 =*/ ne11,
+ 4297 |                         /*.ne12 =*/ ne12,
+ 4298 |                         /*.ne13 =*/ ne13,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4297:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4285 |                     ggml_metal_kargs_mul_mv_id args = {
+      |                                                       ~
+ 4286 |                         /*.nei0 =*/ ne20,
+ 4287 |                         /*.nei1 =*/ ne21,
+ 4288 |                         /*.nbi1 =*/ nb21,
+ 4289 |                         /*.ne00 =*/ ne00,
+ 4290 |                         /*.ne01 =*/ ne01,
+ 4291 |                         /*.ne02 =*/ ne02,
+ 4292 |                         /*.nb00 =*/ nb00,
+ 4293 |                         /*.nb01 =*/ nb01,
+ 4294 |                         /*.nb02 =*/ nb02,
+ 4295 |                         /*.ne10 =*/ ne10,
+ 4296 |                         /*.ne11 =*/ ne11,
+ 4297 |                         /*.ne12 =*/ ne12,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4296:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4285 |                     ggml_metal_kargs_mul_mv_id args = {
+      |                                                       ~
+ 4286 |                         /*.nei0 =*/ ne20,
+ 4287 |                         /*.nei1 =*/ ne21,
+ 4288 |                         /*.nbi1 =*/ nb21,
+ 4289 |                         /*.ne00 =*/ ne00,
+ 4290 |                         /*.ne01 =*/ ne01,
+ 4291 |                         /*.ne02 =*/ ne02,
+ 4292 |                         /*.nb00 =*/ nb00,
+ 4293 |                         /*.nb01 =*/ nb01,
+ 4294 |                         /*.nb02 =*/ nb02,
+ 4295 |                         /*.ne10 =*/ ne10,
+ 4296 |                         /*.ne11 =*/ ne11,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4295:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4285 |                     ggml_metal_kargs_mul_mv_id args = {
+      |                                                       ~
+ 4286 |                         /*.nei0 =*/ ne20,
+ 4287 |                         /*.nei1 =*/ ne21,
+ 4288 |                         /*.nbi1 =*/ nb21,
+ 4289 |                         /*.ne00 =*/ ne00,
+ 4290 |                         /*.ne01 =*/ ne01,
+ 4291 |                         /*.ne02 =*/ ne02,
+ 4292 |                         /*.nb00 =*/ nb00,
+ 4293 |                         /*.nb01 =*/ nb01,
+ 4294 |                         /*.nb02 =*/ nb02,
+ 4295 |                         /*.ne10 =*/ ne10,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4291:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4285 |                     ggml_metal_kargs_mul_mv_id args = {
+      |                                                       ~
+ 4286 |                         /*.nei0 =*/ ne20,
+ 4287 |                         /*.nei1 =*/ ne21,
+ 4288 |                         /*.nbi1 =*/ nb21,
+ 4289 |                         /*.ne00 =*/ ne00,
+ 4290 |                         /*.ne01 =*/ ne01,
+ 4291 |                         /*.ne02 =*/ ne02,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4290:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4285 |                     ggml_metal_kargs_mul_mv_id args = {
+      |                                                       ~
+ 4286 |                         /*.nei0 =*/ ne20,
+ 4287 |                         /*.nei1 =*/ ne21,
+ 4288 |                         /*.nbi1 =*/ nb21,
+ 4289 |                         /*.ne00 =*/ ne00,
+ 4290 |                         /*.ne01 =*/ ne01,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4289:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4285 |                     ggml_metal_kargs_mul_mv_id args = {
+      |                                                       ~
+ 4286 |                         /*.nei0 =*/ ne20,
+ 4287 |                         /*.nei1 =*/ ne21,
+ 4288 |                         /*.nbi1 =*/ nb21,
+ 4289 |                         /*.ne00 =*/ ne00,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4287:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4285 |                     ggml_metal_kargs_mul_mv_id args = {
+      |                                                       ~
+ 4286 |                         /*.nei0 =*/ ne20,
+ 4287 |                         /*.nei1 =*/ ne21,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4286:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4285 |                     ggml_metal_kargs_mul_mv_id args = {
+      |                                                       ~
+ 4286 |                         /*.nei0 =*/ ne20,
+      |                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4391:40: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4391 |                 const int32_t nk0 = ne0/ggml_blck_size(dst->type);
+      |                               ~~~   ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4418:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4411 |                 ggml_metal_kargs_set_rows args = {
+      |                                                  ~
+ 4412 |                     /*.nk0  =*/ nk0,
+ 4413 |                     /*.ne01 =*/ ne01,
+ 4414 |                     /*.nb01 =*/ nb01,
+ 4415 |                     /*.nb02 =*/ nb02,
+ 4416 |                     /*.nb03 =*/ nb03,
+ 4417 |                     /*.ne11 =*/ ne11,
+ 4418 |                     /*.ne12 =*/ ne12,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4417:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4411 |                 ggml_metal_kargs_set_rows args = {
+      |                                                  ~
+ 4412 |                     /*.nk0  =*/ nk0,
+ 4413 |                     /*.ne01 =*/ ne01,
+ 4414 |                     /*.nb01 =*/ nb01,
+ 4415 |                     /*.nb02 =*/ nb02,
+ 4416 |                     /*.nb03 =*/ nb03,
+ 4417 |                     /*.ne11 =*/ ne11,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4413:33: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4411 |                 ggml_metal_kargs_set_rows args = {
+      |                                                  ~
+ 4412 |                     /*.nk0  =*/ nk0,
+ 4413 |                     /*.ne01 =*/ ne01,
+      |                                 ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4452:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4452 |                     /*.nef3   =*/ { ne03 },
+      |                                   ~ ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4451:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4451 |                     /*.nef2   =*/ { ne02 },
+      |                                   ~ ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4450:37: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4450 |                     /*.nef1   =*/ { ne01 },
+      |                                   ~ ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4445:39: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4443 |                 ggml_metal_kargs_rms_norm args = {
+      |                                                  ~
+ 4444 |                     /*.ne00   =*/ ne00,
+ 4445 |                     /*.ne00_4 =*/ ne00/4,
+      |                                   ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4444:35: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4443 |                 ggml_metal_kargs_rms_norm args = {
+      |                                                  ~
+ 4444 |                     /*.ne00   =*/ ne00,
+      |                                   ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4494:49: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4494 |                         args.nef1[n_fuse + 1] = nodes[n_fuse + 1]->src[1]->ne[1];
+      |                                               ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4495:49: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4495 |                         args.nef2[n_fuse + 1] = nodes[n_fuse + 1]->src[1]->ne[2];
+      |                                               ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4496:49: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4496 |                         args.nef3[n_fuse + 1] = nodes[n_fuse + 1]->src[1]->ne[3];
+      |                                               ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4535:36: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+ 4535 |                 nth = MIN(nth, ne00/4);
+      |                     ~          ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4565:36: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+ 4565 |                 nth = MIN(nth, ne00/4);
+      |                     ~          ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4569:39: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4567 |                 ggml_metal_kargs_l2_norm args = {
+      |                                                 ~
+ 4568 |                     /*.ne00   =*/ ne00,
+ 4569 |                     /*.ne00_4 =*/ ne00/4,
+      |                                   ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4568:35: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4567 |                 ggml_metal_kargs_l2_norm args = {
+      |                                                 ~
+ 4568 |                     /*.ne00   =*/ ne00,
+      |                                   ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4638:36: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+ 4638 |                 nth = MIN(nth, ne00/4);
+      |                     ~          ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4642:39: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4640 |                 ggml_metal_kargs_norm args = {
+      |                                              ~
+ 4641 |                     /*.ne00   =*/ ne00,
+ 4642 |                     /*.ne00_4 =*/ ne00/4,
+      |                                   ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4641:35: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4640 |                 ggml_metal_kargs_norm args = {
+      |                                              ~
+ 4641 |                     /*.ne00   =*/ ne00,
+      |                                   ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4665:43: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 4665 |                 const int nth = MIN(1024, ne00);
+      |                           ~~~             ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4739:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4727 |                 ggml_metal_kargs_rope args = {
+      |                                              ~
+ 4728 |                     /*.ne00        =*/ ne00,
+ 4729 |                     /*.ne01        =*/ ne01,
+ 4730 |                     /*.ne02        =*/ ne02,
+ 4731 |                     /*.ne03        =*/ ne03,
+ 4732 |                     /*.nb00        =*/ nb00,
+ 4733 |                     /*.nb01        =*/ nb01,
+ 4734 |                     /*.nb02        =*/ nb02,
+ 4735 |                     /*.nb03        =*/ nb03,
+ 4736 |                     /*.ne0         =*/ ne0,
+ 4737 |                     /*.ne1         =*/ ne1,
+ 4738 |                     /*.ne2         =*/ ne2,
+ 4739 |                     /*.ne3         =*/ ne3,
+      |                                        ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4738:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4727 |                 ggml_metal_kargs_rope args = {
+      |                                              ~
+ 4728 |                     /*.ne00        =*/ ne00,
+ 4729 |                     /*.ne01        =*/ ne01,
+ 4730 |                     /*.ne02        =*/ ne02,
+ 4731 |                     /*.ne03        =*/ ne03,
+ 4732 |                     /*.nb00        =*/ nb00,
+ 4733 |                     /*.nb01        =*/ nb01,
+ 4734 |                     /*.nb02        =*/ nb02,
+ 4735 |                     /*.nb03        =*/ nb03,
+ 4736 |                     /*.ne0         =*/ ne0,
+ 4737 |                     /*.ne1         =*/ ne1,
+ 4738 |                     /*.ne2         =*/ ne2,
+      |                                        ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4737:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4727 |                 ggml_metal_kargs_rope args = {
+      |                                              ~
+ 4728 |                     /*.ne00        =*/ ne00,
+ 4729 |                     /*.ne01        =*/ ne01,
+ 4730 |                     /*.ne02        =*/ ne02,
+ 4731 |                     /*.ne03        =*/ ne03,
+ 4732 |                     /*.nb00        =*/ nb00,
+ 4733 |                     /*.nb01        =*/ nb01,
+ 4734 |                     /*.nb02        =*/ nb02,
+ 4735 |                     /*.nb03        =*/ nb03,
+ 4736 |                     /*.ne0         =*/ ne0,
+ 4737 |                     /*.ne1         =*/ ne1,
+      |                                        ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4736:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4727 |                 ggml_metal_kargs_rope args = {
+      |                                              ~
+ 4728 |                     /*.ne00        =*/ ne00,
+ 4729 |                     /*.ne01        =*/ ne01,
+ 4730 |                     /*.ne02        =*/ ne02,
+ 4731 |                     /*.ne03        =*/ ne03,
+ 4732 |                     /*.nb00        =*/ nb00,
+ 4733 |                     /*.nb01        =*/ nb01,
+ 4734 |                     /*.nb02        =*/ nb02,
+ 4735 |                     /*.nb03        =*/ nb03,
+ 4736 |                     /*.ne0         =*/ ne0,
+      |                                        ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4731:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4727 |                 ggml_metal_kargs_rope args = {
+      |                                              ~
+ 4728 |                     /*.ne00        =*/ ne00,
+ 4729 |                     /*.ne01        =*/ ne01,
+ 4730 |                     /*.ne02        =*/ ne02,
+ 4731 |                     /*.ne03        =*/ ne03,
+      |                                        ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4730:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4727 |                 ggml_metal_kargs_rope args = {
+      |                                              ~
+ 4728 |                     /*.ne00        =*/ ne00,
+ 4729 |                     /*.ne01        =*/ ne01,
+ 4730 |                     /*.ne02        =*/ ne02,
+      |                                        ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4729:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4727 |                 ggml_metal_kargs_rope args = {
+      |                                              ~
+ 4728 |                     /*.ne00        =*/ ne00,
+ 4729 |                     /*.ne01        =*/ ne01,
+      |                                        ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4728:40: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4727 |                 ggml_metal_kargs_rope args = {
+      |                                              ~
+ 4728 |                     /*.ne00        =*/ ne00,
+      |                                        ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4789:36: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4789 |                 const int32_t N  = src1->ne[is_2D ? 3 : 2];
+      |                               ~    ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4790:36: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4790 |                 const int32_t IC = src1->ne[is_2D ? 2 : 1];
+      |                               ~~   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4791:44: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4791 |                 const int32_t IH = is_2D ? src1->ne[1] : 1;
+      |                               ~~           ^~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4792:44: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4792 |                 const int32_t IW =         src1->ne[0];
+      |                               ~~           ^~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4794:44: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4794 |                 const int32_t KH = is_2D ? src0->ne[1] : 1;
+      |                               ~~           ^~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4795:44: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4795 |                 const int32_t KW =         src0->ne[0];
+      |                               ~~           ^~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4797:44: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4797 |                 const int32_t OH = is_2D ? dst->ne[2] : 1;
+      |                               ~~           ^~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4798:44: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4798 |                 const int32_t OW =         dst->ne[1];
+      |                               ~~           ^~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4868:36: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4868 |                 const int32_t IC = src1->ne[1];
+      |                               ~~   ^~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4869:36: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4869 |                 const int32_t IL = src1->ne[0];
+      |                               ~~   ^~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4871:36: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4871 |                 const int32_t K  = src0->ne[0];
+      |                               ~    ^~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4873:36: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4873 |                 const int32_t OL = dst->ne[0];
+      |                               ~~   ^~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4874:36: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 4874 |                 const int32_t OC = dst->ne[1];
+      |                               ~~   ^~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4944:83: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 4944 |                 const int nth = MIN((int) pipeline.maxTotalThreadsPerThreadgroup, ne0);
+      |                           ~~~                                                     ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:4978:43: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 4978 |                 const int nth = MIN(1024, ne0);
+      |                           ~~~             ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5017:43: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 5017 |                 const int nth = MIN(1024, ne0);
+      |                           ~~~             ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5043:43: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 5043 |                 const int nth = MIN(1024, ne0);
+      |                           ~~~             ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5078:35: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+ 5078 |                 const int nrows = ggml_nrows(src0);
+      |                           ~~~~~   ^~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5090:38: warning: implicit conversion loses integer precision: 'unsigned long long' to 'int' [-Wshorten-64-to-32]
+ 5090 |                 const int mem_size = GGML_PAD(ne00_padded*sizeof(int32_t), 16);
+      |                           ~~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:1:
+In file included from /Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/include/ggml-metal.h:24:
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/include/ggml.h:248:41: note: expanded from macro 'GGML_PAD'
+  248 | #define GGML_PAD(x, n) (((x) + (n) - 1) & ~((n) - 1))
+      |                         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5181:46: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 5181 |                 const uint32_t n_head      = src0->ne[2];
+      |                                ~~~~~~        ^~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5538:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 5516 |                     /*.ne2           =*/ ne2,
+      |                                          ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5537:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 5516 |                     /*.ne1           =*/ ne1,
+      |                                          ^~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5533:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 5516 |                     /*.ne33          =*/ ne33,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5532:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 5516 |                     /*.ne32          =*/ ne32,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5525:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 5516 |                 ggml_metal_kargs_flash_attn_ext args = {
+      |                                                        ~
+ 5517 |                     /*.ne01          =*/ ne01,
+ 5518 |                     /*.ne02          =*/ ne02,
+ 5519 |                     /*.ne03          =*/ ne03,
+ 5520 |                     /*.nb01          =*/ nb01,
+ 5521 |                     /*.nb02          =*/ nb02,
+ 5522 |                     /*.nb03          =*/ nb03,
+ 5523 |                     /*.ne11          =*/ ne11,
+ 5524 |                     /*.ne_12_2       =*/ ne12,
+ 5525 |                     /*.ne_12_3       =*/ ne13,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5524:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 5516 |                 ggml_metal_kargs_flash_attn_ext args = {
+      |                                                        ~
+ 5517 |                     /*.ne01          =*/ ne01,
+ 5518 |                     /*.ne02          =*/ ne02,
+ 5519 |                     /*.ne03          =*/ ne03,
+ 5520 |                     /*.nb01          =*/ nb01,
+ 5521 |                     /*.nb02          =*/ nb02,
+ 5522 |                     /*.nb03          =*/ nb03,
+ 5523 |                     /*.ne11          =*/ ne11,
+ 5524 |                     /*.ne_12_2       =*/ ne12,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5523:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 5516 |                 ggml_metal_kargs_flash_attn_ext args = {
+      |                                                        ~
+ 5517 |                     /*.ne01          =*/ ne01,
+ 5518 |                     /*.ne02          =*/ ne02,
+ 5519 |                     /*.ne03          =*/ ne03,
+ 5520 |                     /*.nb01          =*/ nb01,
+ 5521 |                     /*.nb02          =*/ nb02,
+ 5522 |                     /*.nb03          =*/ nb03,
+ 5523 |                     /*.ne11          =*/ ne11,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5519:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 5516 |                 ggml_metal_kargs_flash_attn_ext args = {
+      |                                                        ~
+ 5517 |                     /*.ne01          =*/ ne01,
+ 5518 |                     /*.ne02          =*/ ne02,
+ 5519 |                     /*.ne03          =*/ ne03,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5518:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 5516 |                 ggml_metal_kargs_flash_attn_ext args = {
+      |                                                        ~
+ 5517 |                     /*.ne01          =*/ ne01,
+ 5518 |                     /*.ne02          =*/ ne02,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5517:42: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 5516 |                 ggml_metal_kargs_flash_attn_ext args = {
+      |                                                        ~
+ 5517 |                     /*.ne01          =*/ ne01,
+      |                                          ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5738:38: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+ 5738 |                 const int32_t nk00 = ne00;
+      |                               ~~~~   ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5809:54: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+ 5809 |                 const int im0 = (ne10 == 0 ? 0 : ne10-1);
+      |                           ~~~                    ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5810:54: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+ 5810 |                 const int im1 = (ne11 == 0 ? 0 : ne11-1);
+      |                           ~~~                    ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5811:54: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+ 5811 |                 const int im2 = (ne12 == 0 ? 0 : ne12-1);
+      |                           ~~~                    ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5812:54: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+ 5812 |                 const int im3 = (ne13 == 0 ? 0 : ne13-1);
+      |                           ~~~                    ~~~~^~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:5843:83: warning: implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int' [-Wshorten-64-to-32]
+ 5843 |                 const int nth = MIN((int) pipeline.maxTotalThreadsPerThreadgroup, ne10);
+      |                           ~~~                                                     ^~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:17:39: note: expanded from macro 'MIN'
+   17 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      |                                       ^
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:6430:28: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+ 6430 |         const int cb_idx = iter;
+      |                   ~~~~~~   ^~~~
+In file included from /Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m:3:
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-impl.h:129:13: warning: unused function 'ggml_set_op_params' [-Wunused-function]
+  129 | static void ggml_set_op_params(struct ggml_tensor * tensor, const void * params, size_t params_size) {
+      |             ^~~~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-impl.h:145:13: warning: unused function 'ggml_set_op_params_i32' [-Wunused-function]
+  145 | static void ggml_set_op_params_i32(struct ggml_tensor * tensor, uint32_t i, int32_t value) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-impl.h:150:13: warning: unused function 'ggml_set_op_params_f32' [-Wunused-function]
+  150 | static void ggml_set_op_params_f32(struct ggml_tensor * tensor, uint32_t i, float value) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-impl.h:187:15: warning: unused function 'ggml_bitset_size' [-Wunused-function]
+  187 | static size_t ggml_bitset_size(size_t n) {
+      |               ^~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-impl.h:256:13: warning: unused function 'ggml_hash_contains' [-Wunused-function]
+  256 | static bool ggml_hash_contains(const struct ggml_hash_set * hash_set, struct ggml_tensor * key) {
+      |             ^~~~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-impl.h:261:15: warning: unused function 'ggml_hash_insert' [-Wunused-function]
+  261 | static size_t ggml_hash_insert(struct ggml_hash_set * hash_set, struct ggml_tensor * key) {
+      |               ^~~~~~~~~~~~~~~~
+/Users/simba/Documents/keyboard ai/Vendor/llama.cpp/ggml/src/ggml-impl.h:282:15: warning: unused function 'ggml_hash_find_or_insert' [-Wunused-function]
+  282 | static size_t ggml_hash_find_or_insert(struct ggml_hash_set * hash_set, struct ggml_tensor * key) {
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~
+188 warnings generated.
+
+Ld /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex/Share normal (in target 'Share' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -Xlinker -reproducible -target arm64-apple-ios16.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -O0 -L/Users/simba/Documents/keyboard\ ai/build/EagerLinkingTBDs/Debug-iphoneos -L/Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos -F/Users/simba/Documents/keyboard\ ai/build/EagerLinkingTBDs/Debug-iphoneos -F/Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos -filelist /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/Share.LinkFileList -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/../../Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/Share_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/Share_dependency_info.dat -e _NSExtensionMain -stdlib\=libc++ -fobjc-arc -fobjc-link-runtime -fapplication-extension -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/Share.swiftmodule -ObjC -framework Metal -framework MetalKit -framework Accelerate -o /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex/Share
+
+ExtractAppIntentsMetadata (in target 'Share' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name Share --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk --xcode-version 16F6 --platform-family iOS --deployment-target 16.0 --bundle-identifier com.yourco.KeyboardAI.Share --output /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex --target-triple arm64-apple-ios16.0 --binary-file /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex/Share --dependency-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/Share_dependency_info.dat --stringsdata-file /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/Share.SwiftFileList --metadata-file-list /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Share.DependencyMetadataFileList --static-metadata-file-list /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Share.DependencyStaticMetadataFileList --swift-const-vals-list /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Objects-normal/arm64/Share.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2025-08-16 02:49:04.254 appintentsmetadataprocessor[18675:8581862] Starting appintentsmetadataprocessor export
+2025-08-16 02:49:04.256 appintentsmetadataprocessor[18675:8581862] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+AppIntentsSSUTraining (in target 'Share' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex/Info.plist --temp-dir-path /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/ssu --bundle-id com.yourco.KeyboardAI.Share --product-path /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex --extracted-metadata-path /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex/Metadata.appintents --metadata-file-list /Users/simba/Documents/keyboard\ ai/build/KeyboardAI.build/Debug-iphoneos/Share.build/Share.DependencyMetadataFileList --archive-ssu-assets
+2025-08-16 02:49:04.277 appintentsnltrainingprocessor[18676:8581863] Parsing options for appintentsnltrainingprocessor
+2025-08-16 02:49:04.277 appintentsnltrainingprocessor[18676:8581863] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex (in target 'Share' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    builtin-RegisterExecutionPolicyException /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex
+
+Touch /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex (in target 'Share' from project 'KeyboardAI')
+    cd /Users/simba/Documents/keyboard\ ai
+    /usr/bin/touch -c /Users/simba/Documents/keyboard\ ai/build/Debug-iphoneos/Share.appex
+
+** BUILD SUCCEEDED **
+

@@ -1,0 +1,1123 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0005FEF25C8093C9E64AB36D /* ggml-cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = E467228FF2E07B06A1075D18 /* ggml-cpu.c */; };
+		04CBD678AC1C8DBB8D7DFB67 /* llama-hparams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F93C3D3128463D352D1B7C66 /* llama-hparams.cpp */; };
+		06089E7747CA87E49A325E37 /* ggml-metal.m in Sources */ = {isa = PBXBuildFile; fileRef = D950C2329BC2DFF1D058ABDC /* ggml-metal.m */; };
+		0E0DC199155260B775B4E832 /* cpu-feats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 287099B121E7C7C5E0C7C919 /* cpu-feats.cpp */; };
+		0FF928E7C77E8C67958E4289 /* ggml-blas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB2A2DFDCDA1D4F80C17AC00 /* ggml-blas.cpp */; };
+		12DFC18E60F184EE39DE7B3D /* llama-kv-cache-unified-iswa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66F3249AB45EF6B698F3C874 /* llama-kv-cache-unified-iswa.cpp */; };
+		139C650C607BF40A37121B7F /* llama-context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1C07AC9A1D9181112D3D756 /* llama-context.cpp */; };
+		1491C9EBF26B00EB8EA2AF5A /* SuggestionPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF66F8D95025478E73AF54E /* SuggestionPillView.swift */; };
+		15B03622CA5AB8D943DA01FC /* llama-model-loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CBEF0EBDFD2BFE23527F908 /* llama-model-loader.cpp */; };
+		19FBBDD080CA6FD958AE5DA5 /* gemma-3-270m-it.gguf in Resources */ = {isa = PBXBuildFile; fileRef = ECA7FEAB4A66521B078105A7 /* gemma-3-270m-it.gguf */; };
+		1A37B686A922FA2FE236B333 /* llama-model-saver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69E147BC919F8F34F5B3C77E /* llama-model-saver.cpp */; };
+		1BF638DE81BDA502A33790BA /* repack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF7A546B7BB3E5D64B863518 /* repack.cpp */; };
+		1C41E0FEC28F564B381D2AB5 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5406BE0BFDF48C7E3A7133 /* Metal.framework */; };
+		2510F46AFA2546CFD83BA079 /* unicode-data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7FE92407536156A6D5A2516 /* unicode-data.cpp */; };
+		254F71C025D79403B7C2E7B4 /* KeyboardAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EF9BD5BDF972EDD201DAE2 /* KeyboardAIApp.swift */; };
+		265A53FBD28135528902C7F5 /* llama-io.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C48C65DAC58431CF29F9B5 /* llama-io.cpp */; };
+		26C0556CC2954F4A124964A4 /* ggml-cpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F112E5A3858E052D41BBA8AA /* ggml-cpu.cpp */; };
+		2908F4BC0BABE337BF84BB3F /* ModelInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8DD2A05EF5AD2A9E7A9306 /* ModelInstaller.swift */; };
+		29CE80AB23AD0E31D888B119 /* hbm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE01F9159CEAB0204CB9D51C /* hbm.cpp */; };
+		2D660759970C0B41B36695D4 /* llama-sampling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9B4375132C83275409910D7 /* llama-sampling.cpp */; };
+		2E21591F238652030316F581 /* gguf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71857C09F7D58C4BFB6B1D6C /* gguf.cpp */; };
+		2E3E8D906CD8434D7AB3CFCD /* ggml-threading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3505054FE86EB454A006BF89 /* ggml-threading.cpp */; };
+		310AC1FE737FEAE06ADA708E /* llama-batch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB69B2CBFF929899083379 /* llama-batch.cpp */; };
+		310EC431600AD3A704671960 /* hbm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE01F9159CEAB0204CB9D51C /* hbm.cpp */; };
+		3178D90267685BB3A6AE1283 /* llama-memory-recurrent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F49236168D3C467A807EA336 /* llama-memory-recurrent.cpp */; };
+		331A76BEE1B787C7859F8B06 /* llama-cparams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E96197D89013703583C1A20 /* llama-cparams.cpp */; };
+		332B34210AED2E670A80AB49 /* llama-kv-cache-unified.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45518C0E1F21D3A1FCEA3662 /* llama-kv-cache-unified.cpp */; };
+		3660F062F0982A2E01802D74 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F1D264A360DAD462974EEF /* Accelerate.framework */; };
+		37C2987F89B3FBFB3D0D8A91 /* quants.c in Sources */ = {isa = PBXBuildFile; fileRef = 5340B126A9F7023BF85A8BDA /* quants.c */; };
+		37D26160ECBC33A844834FCC /* ggml-quants.c in Sources */ = {isa = PBXBuildFile; fileRef = 1409D1B81F5397399B66FC93 /* ggml-quants.c */; };
+		3AE36B9293618DA220B3A367 /* ggml-metal.m in Sources */ = {isa = PBXBuildFile; fileRef = D950C2329BC2DFF1D058ABDC /* ggml-metal.m */; };
+		3B3EDB26B9BCA89FAA318231 /* llama-io.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C48C65DAC58431CF29F9B5 /* llama-io.cpp */; };
+		3BF01D7F22AB8FABB20569F2 /* llama-memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA1E57F0DF75CF77F7CFF066 /* llama-memory.cpp */; };
+		3E6FDB86718852EFDF15BFC3 /* ggml-threading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3505054FE86EB454A006BF89 /* ggml-threading.cpp */; };
+		3F3AD2F1B4229F85B768F10D /* llama-arch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08D70598BB299F4BAAC5E32C /* llama-arch.cpp */; };
+		3F8F34044670D3D97748BECA /* ggml.c in Sources */ = {isa = PBXBuildFile; fileRef = 20C0D6D2D70F7869ACF87F73 /* ggml.c */; };
+		40E88EA6B4008525CD4BD564 /* ggml-opt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32934A5A346D1F575C739E03 /* ggml-opt.cpp */; };
+		4125D5FD94C9694538DEA3C8 /* ggml-backend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C52859025E970ABFA1F7D /* ggml-backend.cpp */; };
+		412FE4FE1055E486D14DA969 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DDEB34F918C2C85762236F /* KeyboardViewController.swift */; };
+		449EC621BF4EB1E6CEC11BCA /* llama-hparams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F93C3D3128463D352D1B7C66 /* llama-hparams.cpp */; };
+		48B508094A103E2CF4DE85F6 /* llama-kv-cache-unified.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45518C0E1F21D3A1FCEA3662 /* llama-kv-cache-unified.cpp */; };
+		49560DE29C50E1B3AC0CDDEE /* llama-impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08642E8E70996913AE045741 /* llama-impl.cpp */; };
+		499520C61A5DD9F855678A6B /* StylePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FFDD514785B930911DEA19 /* StylePickerView.swift */; };
+		4A720EC232DC8B304CA4282A /* ggml-metal.metal in Sources */ = {isa = PBXBuildFile; fileRef = 64FF34A7955C37DEB45B74D9 /* ggml-metal.metal */; };
+		4CF868B56182A10FFD6B3BDC /* ops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB1865C1384014FF400CF238 /* ops.cpp */; };
+		5001DB3C4E38C94256CFDBB8 /* PromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D385EB14E043B2D9174ECE /* PromptBuilder.swift */; };
+		5B3549F1E827013342858130 /* llama.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C51AEA81DBC03201889BA88 /* llama.cpp */; };
+		5BD5136DCD222257A98B05B7 /* unary-ops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A5971D783FE5E892220A1D1 /* unary-ops.cpp */; };
+		5BF7AFE9E3D5F54A88F24EF2 /* mmq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F92C29214EFDC14E2E20A3C /* mmq.cpp */; };
+		61DDFA1E6958D3AEC8DD4260 /* ggml-cpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F112E5A3858E052D41BBA8AA /* ggml-cpu.cpp */; };
+		62A66C684847D1B6570DF6D0 /* llama-quant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D4367091DEC08ADCF4DA03 /* llama-quant.cpp */; };
+		62C043BC64AA7B9356B77E8D /* llama-mmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9179444BF0FF5C4F69E17678 /* llama-mmap.cpp */; };
+		678E50D03F730EFB7EBF8D52 /* amx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA3463E3DE90B2CCC36574 /* amx.cpp */; };
+		6813A20D0482E065D735E69E /* ggml-rpc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CBA85E56C80CA829F7380 /* ggml-rpc.cpp */; };
+		681EE282C91C971BF4AAF508 /* ops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB1865C1384014FF400CF238 /* ops.cpp */; };
+		6BCC99AA98CCC6C99C568EEE /* llama-kv-cache-unified-iswa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66F3249AB45EF6B698F3C874 /* llama-kv-cache-unified-iswa.cpp */; };
+		6D5CDC8925CDEB3CA83AC136 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5406BE0BFDF48C7E3A7133 /* Metal.framework */; };
+		6D921E8C91A9EB9C9B623A40 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F1D264A360DAD462974EEF /* Accelerate.framework */; };
+		6E35C1E606D1CE790B936303 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEB38D443265D3B3B42A68 /* SharedModels.swift */; };
+		6EE3E3D3244B7F56CDDCF5E8 /* ggml-backend-reg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 454436872B5911A5CF7E19B9 /* ggml-backend-reg.cpp */; };
+		716AD278A9B2D344E32B1964 /* llama-model-saver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69E147BC919F8F34F5B3C77E /* llama-model-saver.cpp */; };
+		71A93BEACA58DD5FBA618119 /* llama-memory-recurrent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F49236168D3C467A807EA336 /* llama-memory-recurrent.cpp */; };
+		72ED771840B0FE35261D0A75 /* llama-graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9519E9E4CD8CE6D2103904F /* llama-graph.cpp */; };
+		743C9864FB8C7937AB8ED892 /* quants.c in Sources */ = {isa = PBXBuildFile; fileRef = ED3879EEB4693364A3EFDC7C /* quants.c */; };
+		747F11D875139FB85C8851C4 /* repack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94FB86AAF196EEBD91B7F090 /* repack.cpp */; };
+		780D2A262FBFFE1C9F829219 /* llama-vocab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B04988C1F3236318FF8AE314 /* llama-vocab.cpp */; };
+		7A45D7FAB60F2EF7F9ADE552 /* ggml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56A45243CAE9340ACC48692D /* ggml.cpp */; };
+		7CB468B0EF28941B88FFB787 /* unary-ops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A5971D783FE5E892220A1D1 /* unary-ops.cpp */; };
+		7CBEC865B43CE191E28EA057 /* ReplyActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467AE8B48B7C5AC2E014D14 /* ReplyActionViewController.swift */; };
+		8133B068D58513DED778275E /* llama_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD422ED0407C118641047B0B /* llama_wrapper.cpp */; };
+		84D9D2D01B8B241F85C5A137 /* llama.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C51AEA81DBC03201889BA88 /* llama.cpp */; };
+		853907E8401055E1D0B5756E /* llama-memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA1E57F0DF75CF77F7CFF066 /* llama-memory.cpp */; };
+		86EA14C4D35DB7F2193F4185 /* amx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA3463E3DE90B2CCC36574 /* amx.cpp */; };
+		88EFBE8E6D72C489D300BA60 /* ggml-quants.c in Sources */ = {isa = PBXBuildFile; fileRef = 1409D1B81F5397399B66FC93 /* ggml-quants.c */; };
+		8BACF10F645B36D8BDBDE12E /* vec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D4004C54E8545CAF7554A9A /* vec.cpp */; };
+		8D18E32B0306290E11DE110A /* repack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94FB86AAF196EEBD91B7F090 /* repack.cpp */; };
+		8D1C3ABBF2213721E99C131A /* llama-model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 613CF00D7979111DD9F631C0 /* llama-model.cpp */; };
+		8D315500E4A286466C0BEC66 /* ggml.c in Sources */ = {isa = PBXBuildFile; fileRef = 20C0D6D2D70F7869ACF87F73 /* ggml.c */; };
+		8D6597C6B22B556774963C65 /* ggml-alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = D790E9DA7384BFF2CA8D929C /* ggml-alloc.c */; };
+		9140184328DC62E439F9AC19 /* PromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D385EB14E043B2D9174ECE /* PromptBuilder.swift */; };
+		918C094C9E2B9C667F8FD091 /* repack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF7A546B7BB3E5D64B863518 /* repack.cpp */; };
+		91DD8E39B97113909BBCE698 /* quants.c in Sources */ = {isa = PBXBuildFile; fileRef = ED3879EEB4693364A3EFDC7C /* quants.c */; };
+		923CE8C40557C27D21F3F5A7 /* llama-memory-hybrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9652DC477EFE8F7760FA8491 /* llama-memory-hybrid.cpp */; };
+		9247F3BFAED9DE2423567269 /* llama-quant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9D4367091DEC08ADCF4DA03 /* llama-quant.cpp */; };
+		932C692CDADB16A7192405E0 /* Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C68C3E24FD93490A6816AACA /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		98BA59F06FBF55802396E493 /* Share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 49D29E64815B3487F621C1D6 /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		98CF51145AD13064C387052F /* llama-mmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9179444BF0FF5C4F69E17678 /* llama-mmap.cpp */; };
+		9FF8C78F1FA852763034594E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F607F1D5CA2A9E64039B6B /* SettingsView.swift */; };
+		A28DFB20BAB5D86B252E0437 /* ggml-metal.metal in Sources */ = {isa = PBXBuildFile; fileRef = 64FF34A7955C37DEB45B74D9 /* ggml-metal.metal */; };
+		A4BA39BA8F9CE6FCF580EA4C /* llama-cparams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E96197D89013703583C1A20 /* llama-cparams.cpp */; };
+		A7AFB382D487294DB51DC2D1 /* llama-adapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F219E1A93FC00F3B57186ACC /* llama-adapter.cpp */; };
+		A7F19FC708AD33063386984D /* llama-batch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB69B2CBFF929899083379 /* llama-batch.cpp */; };
+		A8320A5A741608383B4D7999 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEB38D443265D3B3B42A68 /* SharedModels.swift */; };
+		AAB00E6B75F358B915F9B5C6 /* llama-grammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 069D5C8E123299C2A655365F /* llama-grammar.cpp */; };
+		AADFA214469E522FCB8E9D9B /* ggml-rpc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CBA85E56C80CA829F7380 /* ggml-rpc.cpp */; };
+		AEA77FD5160F9F9F98759DF2 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEB38D443265D3B3B42A68 /* SharedModels.swift */; };
+		AEE74C8BC61F561E04729107 /* llama-grammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 069D5C8E123299C2A655365F /* llama-grammar.cpp */; };
+		B152C4905ADD26EBD55F9C1A /* ggml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56A45243CAE9340ACC48692D /* ggml.cpp */; };
+		B3CDADBADF76243504832451 /* ggml-alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = D790E9DA7384BFF2CA8D929C /* ggml-alloc.c */; };
+		B543CA8972582C512A2ABB84 /* LocalLLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1210B385B368C911D7E94C /* LocalLLM.swift */; };
+		B58F480C920114E196DB942C /* binary-ops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C72228AFB3D1042CBC6DB /* binary-ops.cpp */; };
+		B7641DC8559D5DC8C7505F79 /* ggml-blas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB2A2DFDCDA1D4F80C17AC00 /* ggml-blas.cpp */; };
+		B8FE31BE65DAD04A59256D3B /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2953554828B7A1CD6B0F7DD9 /* MetalKit.framework */; };
+		B95608E541EC235AC9F0474C /* vec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D4004C54E8545CAF7554A9A /* vec.cpp */; };
+		BA986BBF278E5640F24B2F5D /* ggml-backend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C52859025E970ABFA1F7D /* ggml-backend.cpp */; };
+		BBB08AB84F2D82FF990DD7BD /* llama-model-loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CBEF0EBDFD2BFE23527F908 /* llama-model-loader.cpp */; };
+		BC1546A09D14121DF6C5D8DA /* llama-chat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A44FBEB9519522B4C7D4E58F /* llama-chat.cpp */; };
+		C075FF86453975CB5D009F7A /* llama-graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9519E9E4CD8CE6D2103904F /* llama-graph.cpp */; };
+		C32F254CB1046265F21A89B2 /* LLMBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067CD81C12DE0FF607E9936 /* LLMBridge.swift */; };
+		C47A6923D72681AC45549DF5 /* llama-adapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F219E1A93FC00F3B57186ACC /* llama-adapter.cpp */; };
+		C591DB8D28FCA5CC48D8232C /* llama-model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 613CF00D7979111DD9F631C0 /* llama-model.cpp */; };
+		C6CDDF65F3D2B8781FE28D32 /* unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E72BFF840A4702BC174BED99 /* unicode.cpp */; };
+		C756076595726088C4F2A33A /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2953554828B7A1CD6B0F7DD9 /* MetalKit.framework */; };
+		CDF0B13EBA09F3A110DD2B90 /* llama-memory-hybrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9652DC477EFE8F7760FA8491 /* llama-memory-hybrid.cpp */; };
+		CEB1D667B59706420A0D77FB /* llama-chat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A44FBEB9519522B4C7D4E58F /* llama-chat.cpp */; };
+		CEB721F4CD75413D7BA5F632 /* ggml-backend-reg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 454436872B5911A5CF7E19B9 /* ggml-backend-reg.cpp */; };
+		D3B7EB7DE431F0873BCF2866 /* llama-vocab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B04988C1F3236318FF8AE314 /* llama-vocab.cpp */; };
+		D3DF7C6FA81284C4C10453E8 /* LocalLLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1210B385B368C911D7E94C /* LocalLLM.swift */; };
+		D400CD6D1AD332F2D779A21E /* ggml-opt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32934A5A346D1F575C739E03 /* ggml-opt.cpp */; };
+		D6321E53B6F89DA7B8C62094 /* llama-arch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08D70598BB299F4BAAC5E32C /* llama-arch.cpp */; };
+		D965FF840A00F88375F2EC0D /* unicode-data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7FE92407536156A6D5A2516 /* unicode-data.cpp */; };
+		DF02A896D9A845908B7ECB40 /* llama-context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1C07AC9A1D9181112D3D756 /* llama-context.cpp */; };
+		E30D281BF79C464620E6CF4C /* llama_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD422ED0407C118641047B0B /* llama_wrapper.cpp */; };
+		EC1F6F5647C4A9156FFFA3E7 /* gguf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71857C09F7D58C4BFB6B1D6C /* gguf.cpp */; };
+		EE8FD71B8329A5336CAC1F04 /* ggml-cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = E467228FF2E07B06A1075D18 /* ggml-cpu.c */; };
+		EECD8CB74C8690025FEA88F6 /* mmq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F92C29214EFDC14E2E20A3C /* mmq.cpp */; };
+		EFB91816A204BBE4F48D9936 /* LLMBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067CD81C12DE0FF607E9936 /* LLMBridge.swift */; };
+		F1B024100A8CD82C8DF7835A /* traits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6461B487C72F6BF3D626B013 /* traits.cpp */; };
+		F34BB094D43DE1526CBF5CA1 /* traits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6461B487C72F6BF3D626B013 /* traits.cpp */; };
+		F585FB46AE294876CA45F6E2 /* quants.c in Sources */ = {isa = PBXBuildFile; fileRef = 5340B126A9F7023BF85A8BDA /* quants.c */; };
+		F589D4DE19FB455583036377 /* binary-ops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C72228AFB3D1042CBC6DB /* binary-ops.cpp */; };
+		F907281B7068FB5F226EAC70 /* llama-impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08642E8E70996913AE045741 /* llama-impl.cpp */; };
+		FA02BF45B3081982D2F4BB4E /* unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E72BFF840A4702BC174BED99 /* unicode.cpp */; };
+		FE4236F923A85A1391B90F12 /* cpu-feats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 287099B121E7C7C5E0C7C919 /* cpu-feats.cpp */; };
+		FF59B84F8B3EB18755FD3BDB /* llama-sampling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9B4375132C83275409910D7 /* llama-sampling.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70C0AF3CB3CAE9FDB4AD3A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C1EB2F0338721D1FE063F50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE5464BA58CDE83C22057608;
+			remoteInfo = Keyboard;
+		};
+		8F28A765A80D16F1F619E92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C1EB2F0338721D1FE063F50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53297501F8B9900AB594802D;
+			remoteInfo = Share;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0974FE7943DC95A55ADFFB9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				932C692CDADB16A7192405E0 /* Keyboard.appex in Embed Foundation Extensions */,
+				98BA59F06FBF55802396E493 /* Share.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0467AE8B48B7C5AC2E014D14 /* ReplyActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyActionViewController.swift; sourceTree = "<group>"; };
+		069D5C8E123299C2A655365F /* llama-grammar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-grammar.cpp"; sourceTree = "<group>"; };
+		08642E8E70996913AE045741 /* llama-impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-impl.cpp"; sourceTree = "<group>"; };
+		08D70598BB299F4BAAC5E32C /* llama-arch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-arch.cpp"; sourceTree = "<group>"; };
+		1409D1B81F5397399B66FC93 /* ggml-quants.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "ggml-quants.c"; sourceTree = "<group>"; };
+		1AF66F8D95025478E73AF54E /* SuggestionPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionPillView.swift; sourceTree = "<group>"; };
+		20C0D6D2D70F7869ACF87F73 /* ggml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ggml.c; sourceTree = "<group>"; };
+		24F9CFF802DCC0F2225D059B /* KeyboardAI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyboardAI-Bridging-Header.h"; sourceTree = "<group>"; };
+		287099B121E7C7C5E0C7C919 /* cpu-feats.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "cpu-feats.cpp"; sourceTree = "<group>"; };
+		2953554828B7A1CD6B0F7DD9 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		2AAC5B3AF5E602EBE6D0F252 /* .keep */ = {isa = PBXFileReference; path = .keep; sourceTree = "<group>"; };
+		2CEEB38D443265D3B3B42A68 /* SharedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModels.swift; sourceTree = "<group>"; };
+		32934A5A346D1F575C739E03 /* ggml-opt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-opt.cpp"; sourceTree = "<group>"; };
+		3505054FE86EB454A006BF89 /* ggml-threading.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-threading.cpp"; sourceTree = "<group>"; };
+		37A357709B6203E208140CF8 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		3ABA3463E3DE90B2CCC36574 /* amx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = amx.cpp; sourceTree = "<group>"; };
+		454436872B5911A5CF7E19B9 /* ggml-backend-reg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-backend-reg.cpp"; sourceTree = "<group>"; };
+		45518C0E1F21D3A1FCEA3662 /* llama-kv-cache-unified.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-kv-cache-unified.cpp"; sourceTree = "<group>"; };
+		49D29E64815B3487F621C1D6 /* Share.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E1210B385B368C911D7E94C /* LocalLLM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLLM.swift; sourceTree = "<group>"; };
+		5340B126A9F7023BF85A8BDA /* quants.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quants.c; sourceTree = "<group>"; };
+		56A45243CAE9340ACC48692D /* ggml.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ggml.cpp; sourceTree = "<group>"; };
+		5ADB69B2CBFF929899083379 /* llama-batch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-batch.cpp"; sourceTree = "<group>"; };
+		5D2CBA85E56C80CA829F7380 /* ggml-rpc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-rpc.cpp"; sourceTree = "<group>"; };
+		5F5406BE0BFDF48C7E3A7133 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		613CF00D7979111DD9F631C0 /* llama-model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-model.cpp"; sourceTree = "<group>"; };
+		62FFDD514785B930911DEA19 /* StylePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylePickerView.swift; sourceTree = "<group>"; };
+		6461B487C72F6BF3D626B013 /* traits.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = traits.cpp; sourceTree = "<group>"; };
+		64FF34A7955C37DEB45B74D9 /* ggml-metal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = "ggml-metal.metal"; sourceTree = "<group>"; };
+		66F3249AB45EF6B698F3C874 /* llama-kv-cache-unified-iswa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-kv-cache-unified-iswa.cpp"; sourceTree = "<group>"; };
+		678B57C6273ACB0E04D98B8E /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		69E147BC919F8F34F5B3C77E /* llama-model-saver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-model-saver.cpp"; sourceTree = "<group>"; };
+		6F92C29214EFDC14E2E20A3C /* mmq.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mmq.cpp; sourceTree = "<group>"; };
+		71490E66A40CB067F64E913E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		71857C09F7D58C4BFB6B1D6C /* gguf.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gguf.cpp; sourceTree = "<group>"; };
+		7E1C52859025E970ABFA1F7D /* ggml-backend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-backend.cpp"; sourceTree = "<group>"; };
+		8A5971D783FE5E892220A1D1 /* unary-ops.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unary-ops.cpp"; sourceTree = "<group>"; };
+		8A6C72228AFB3D1042CBC6DB /* binary-ops.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "binary-ops.cpp"; sourceTree = "<group>"; };
+		8C51AEA81DBC03201889BA88 /* llama.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = llama.cpp; sourceTree = "<group>"; };
+		9179444BF0FF5C4F69E17678 /* llama-mmap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-mmap.cpp"; sourceTree = "<group>"; };
+		92F607F1D5CA2A9E64039B6B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		94FB86AAF196EEBD91B7F090 /* repack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = repack.cpp; sourceTree = "<group>"; };
+		9652DC477EFE8F7760FA8491 /* llama-memory-hybrid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-memory-hybrid.cpp"; sourceTree = "<group>"; };
+		98D385EB14E043B2D9174ECE /* PromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptBuilder.swift; sourceTree = "<group>"; };
+		9CBEF0EBDFD2BFE23527F908 /* llama-model-loader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-model-loader.cpp"; sourceTree = "<group>"; };
+		9D4004C54E8545CAF7554A9A /* vec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vec.cpp; sourceTree = "<group>"; };
+		9E96197D89013703583C1A20 /* llama-cparams.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-cparams.cpp"; sourceTree = "<group>"; };
+		9FA527F44D1A4A1EB4AE36E3 /* llama_wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = llama_wrapper.h; sourceTree = "<group>"; };
+		A067CD81C12DE0FF607E9936 /* LLMBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMBridge.swift; sourceTree = "<group>"; };
+		A44FBEB9519522B4C7D4E58F /* llama-chat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-chat.cpp"; sourceTree = "<group>"; };
+		A9519E9E4CD8CE6D2103904F /* llama-graph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-graph.cpp"; sourceTree = "<group>"; };
+		A9B4375132C83275409910D7 /* llama-sampling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-sampling.cpp"; sourceTree = "<group>"; };
+		AA8DD2A05EF5AD2A9E7A9306 /* ModelInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelInstaller.swift; sourceTree = "<group>"; };
+		B04988C1F3236318FF8AE314 /* llama-vocab.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-vocab.cpp"; sourceTree = "<group>"; };
+		B1CFC669719118C4D9F241D5 /* KeyboardAI.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = KeyboardAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FE92407536156A6D5A2516 /* unicode-data.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unicode-data.cpp"; sourceTree = "<group>"; };
+		BA1E57F0DF75CF77F7CFF066 /* llama-memory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-memory.cpp"; sourceTree = "<group>"; };
+		BB1865C1384014FF400CF238 /* ops.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ops.cpp; sourceTree = "<group>"; };
+		BD422ED0407C118641047B0B /* llama_wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = llama_wrapper.cpp; sourceTree = "<group>"; };
+		BE01F9159CEAB0204CB9D51C /* hbm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hbm.cpp; sourceTree = "<group>"; };
+		BF9F48EEC7236D0AFEDBBF94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C1C07AC9A1D9181112D3D756 /* llama-context.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-context.cpp"; sourceTree = "<group>"; };
+		C68C3E24FD93490A6816AACA /* Keyboard.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F1D264A360DAD462974EEF /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C9D4367091DEC08ADCF4DA03 /* llama-quant.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-quant.cpp"; sourceTree = "<group>"; };
+		D1C12B85EDEC580E669C8D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D3C48C65DAC58431CF29F9B5 /* llama-io.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-io.cpp"; sourceTree = "<group>"; };
+		D790E9DA7384BFF2CA8D929C /* ggml-alloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "ggml-alloc.c"; sourceTree = "<group>"; };
+		D950C2329BC2DFF1D058ABDC /* ggml-metal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ggml-metal.m"; sourceTree = "<group>"; };
+		DD8DF6251840D510B3BABF90 /* KeyboardExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyboardExtension.entitlements; sourceTree = "<group>"; };
+		E467228FF2E07B06A1075D18 /* ggml-cpu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "ggml-cpu.c"; sourceTree = "<group>"; };
+		E72BFF840A4702BC174BED99 /* unicode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unicode.cpp; sourceTree = "<group>"; };
+		E8DDEB34F918C2C85762236F /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		ECA7FEAB4A66521B078105A7 /* gemma-3-270m-it.gguf */ = {isa = PBXFileReference; path = "gemma-3-270m-it.gguf"; sourceTree = "<group>"; };
+		ED3879EEB4693364A3EFDC7C /* quants.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quants.c; sourceTree = "<group>"; };
+		EF7A546B7BB3E5D64B863518 /* repack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = repack.cpp; sourceTree = "<group>"; };
+		F112E5A3858E052D41BBA8AA /* ggml-cpu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-cpu.cpp"; sourceTree = "<group>"; };
+		F219E1A93FC00F3B57186ACC /* llama-adapter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-adapter.cpp"; sourceTree = "<group>"; };
+		F49236168D3C467A807EA336 /* llama-memory-recurrent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-memory-recurrent.cpp"; sourceTree = "<group>"; };
+		F6EF9BD5BDF972EDD201DAE2 /* KeyboardAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAIApp.swift; sourceTree = "<group>"; };
+		F93C3D3128463D352D1B7C66 /* llama-hparams.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-hparams.cpp"; sourceTree = "<group>"; };
+		FB2A2DFDCDA1D4F80C17AC00 /* ggml-blas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-blas.cpp"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ACCA9C6B8DDC75CEB97CD7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C41E0FEC28F564B381D2AB5 /* Metal.framework in Frameworks */,
+				C756076595726088C4F2A33A /* MetalKit.framework in Frameworks */,
+				3660F062F0982A2E01802D74 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3920C5EFC24BAB6ACA1E973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5CDC8925CDEB3CA83AC136 /* Metal.framework in Frameworks */,
+				B8FE31BE65DAD04A59256D3B /* MetalKit.framework in Frameworks */,
+				6D921E8C91A9EB9C9B623A40 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0004A1C2A621A78C140B0391 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				678B57C6273ACB0E04D98B8E /* App.entitlements */,
+				71490E66A40CB067F64E913E /* Info.plist */,
+				F6EF9BD5BDF972EDD201DAE2 /* KeyboardAIApp.swift */,
+				AA8DD2A05EF5AD2A9E7A9306 /* ModelInstaller.swift */,
+				92F607F1D5CA2A9E64039B6B /* SettingsView.swift */,
+				45911047E4375157167422BC /* Models */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		25CF8534F3241473A21092EE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A067CD81C12DE0FF607E9936 /* LLMBridge.swift */,
+				2CEEB38D443265D3B3B42A68 /* SharedModels.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		27871C3C17FBD002607486AA = {
+			isa = PBXGroup;
+			children = (
+				0004A1C2A621A78C140B0391 /* App */,
+				27C7F9584BE399A493C3364E /* KeyboardExtension */,
+				25CF8534F3241473A21092EE /* Shared */,
+				45EC994307B77375AB0B7E2C /* ShareExtension */,
+				CEFBFDD7F80AC5E872D98B2A /* src */,
+				A136FC2C3C687E3B6A729985 /* src */,
+				82086DC187178A387624DF78 /* Vendor */,
+				E7E34EC109C456A4462708E7 /* Frameworks */,
+				7B8B715DF3E54C245CDEA0B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27C7F9584BE399A493C3364E /* KeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BF9F48EEC7236D0AFEDBBF94 /* Info.plist */,
+				24F9CFF802DCC0F2225D059B /* KeyboardAI-Bridging-Header.h */,
+				DD8DF6251840D510B3BABF90 /* KeyboardExtension.entitlements */,
+				E8DDEB34F918C2C85762236F /* KeyboardViewController.swift */,
+				4E1210B385B368C911D7E94C /* LocalLLM.swift */,
+				98D385EB14E043B2D9174ECE /* PromptBuilder.swift */,
+				62FFDD514785B930911DEA19 /* StylePickerView.swift */,
+				1AF66F8D95025478E73AF54E /* SuggestionPillView.swift */,
+			);
+			path = KeyboardExtension;
+			sourceTree = "<group>";
+		};
+		43F93D819E409EF00E1E24A6 /* arch */ = {
+			isa = PBXGroup;
+			children = (
+				A3F8F7FF9DB959179EE1DD0F /* arm */,
+			);
+			path = arch;
+			sourceTree = "<group>";
+		};
+		45911047E4375157167422BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2AAC5B3AF5E602EBE6D0F252 /* .keep */,
+				ECA7FEAB4A66521B078105A7 /* gemma-3-270m-it.gguf */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45EC994307B77375AB0B7E2C /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D1C12B85EDEC580E669C8D27 /* Info.plist */,
+				0467AE8B48B7C5AC2E014D14 /* ReplyActionViewController.swift */,
+				37A357709B6203E208140CF8 /* ShareExtension.entitlements */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		4B8CAA1CC52FCBD8778BB3D7 /* ggml-cpu */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C72228AFB3D1042CBC6DB /* binary-ops.cpp */,
+				E467228FF2E07B06A1075D18 /* ggml-cpu.c */,
+				F112E5A3858E052D41BBA8AA /* ggml-cpu.cpp */,
+				BE01F9159CEAB0204CB9D51C /* hbm.cpp */,
+				BB1865C1384014FF400CF238 /* ops.cpp */,
+				ED3879EEB4693364A3EFDC7C /* quants.c */,
+				EF7A546B7BB3E5D64B863518 /* repack.cpp */,
+				6461B487C72F6BF3D626B013 /* traits.cpp */,
+				8A5971D783FE5E892220A1D1 /* unary-ops.cpp */,
+				9D4004C54E8545CAF7554A9A /* vec.cpp */,
+				6909E62B68896470243A3C46 /* amx */,
+				43F93D819E409EF00E1E24A6 /* arch */,
+			);
+			path = "ggml-cpu";
+			sourceTree = "<group>";
+		};
+		6909E62B68896470243A3C46 /* amx */ = {
+			isa = PBXGroup;
+			children = (
+				3ABA3463E3DE90B2CCC36574 /* amx.cpp */,
+				6F92C29214EFDC14E2E20A3C /* mmq.cpp */,
+			);
+			path = amx;
+			sourceTree = "<group>";
+		};
+		7B8B715DF3E54C245CDEA0B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C68C3E24FD93490A6816AACA /* Keyboard.appex */,
+				B1CFC669719118C4D9F241D5 /* KeyboardAI.app */,
+				49D29E64815B3487F621C1D6 /* Share.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82086DC187178A387624DF78 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				BD422ED0407C118641047B0B /* llama_wrapper.cpp */,
+				9FA527F44D1A4A1EB4AE36E3 /* llama_wrapper.h */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		9BAB6152CFC5A6E2BE365B41 /* ggml-metal */ = {
+			isa = PBXGroup;
+			children = (
+				D950C2329BC2DFF1D058ABDC /* ggml-metal.m */,
+				64FF34A7955C37DEB45B74D9 /* ggml-metal.metal */,
+			);
+			path = "ggml-metal";
+			sourceTree = "<group>";
+		};
+		A136FC2C3C687E3B6A729985 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F219E1A93FC00F3B57186ACC /* llama-adapter.cpp */,
+				08D70598BB299F4BAAC5E32C /* llama-arch.cpp */,
+				5ADB69B2CBFF929899083379 /* llama-batch.cpp */,
+				A44FBEB9519522B4C7D4E58F /* llama-chat.cpp */,
+				C1C07AC9A1D9181112D3D756 /* llama-context.cpp */,
+				9E96197D89013703583C1A20 /* llama-cparams.cpp */,
+				069D5C8E123299C2A655365F /* llama-grammar.cpp */,
+				A9519E9E4CD8CE6D2103904F /* llama-graph.cpp */,
+				F93C3D3128463D352D1B7C66 /* llama-hparams.cpp */,
+				08642E8E70996913AE045741 /* llama-impl.cpp */,
+				D3C48C65DAC58431CF29F9B5 /* llama-io.cpp */,
+				66F3249AB45EF6B698F3C874 /* llama-kv-cache-unified-iswa.cpp */,
+				45518C0E1F21D3A1FCEA3662 /* llama-kv-cache-unified.cpp */,
+				9652DC477EFE8F7760FA8491 /* llama-memory-hybrid.cpp */,
+				F49236168D3C467A807EA336 /* llama-memory-recurrent.cpp */,
+				BA1E57F0DF75CF77F7CFF066 /* llama-memory.cpp */,
+				9179444BF0FF5C4F69E17678 /* llama-mmap.cpp */,
+				9CBEF0EBDFD2BFE23527F908 /* llama-model-loader.cpp */,
+				69E147BC919F8F34F5B3C77E /* llama-model-saver.cpp */,
+				613CF00D7979111DD9F631C0 /* llama-model.cpp */,
+				C9D4367091DEC08ADCF4DA03 /* llama-quant.cpp */,
+				A9B4375132C83275409910D7 /* llama-sampling.cpp */,
+				B04988C1F3236318FF8AE314 /* llama-vocab.cpp */,
+				8C51AEA81DBC03201889BA88 /* llama.cpp */,
+				B7FE92407536156A6D5A2516 /* unicode-data.cpp */,
+				E72BFF840A4702BC174BED99 /* unicode.cpp */,
+			);
+			name = src;
+			path = Vendor/llama.cpp/src;
+			sourceTree = "<group>";
+		};
+		A3F8F7FF9DB959179EE1DD0F /* arm */ = {
+			isa = PBXGroup;
+			children = (
+				287099B121E7C7C5E0C7C919 /* cpu-feats.cpp */,
+				5340B126A9F7023BF85A8BDA /* quants.c */,
+				94FB86AAF196EEBD91B7F090 /* repack.cpp */,
+			);
+			path = arm;
+			sourceTree = "<group>";
+		};
+		B4F88B47A6CD77D6622EC1F9 /* ggml-blas */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A2DFDCDA1D4F80C17AC00 /* ggml-blas.cpp */,
+			);
+			path = "ggml-blas";
+			sourceTree = "<group>";
+		};
+		CEFBFDD7F80AC5E872D98B2A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D790E9DA7384BFF2CA8D929C /* ggml-alloc.c */,
+				454436872B5911A5CF7E19B9 /* ggml-backend-reg.cpp */,
+				7E1C52859025E970ABFA1F7D /* ggml-backend.cpp */,
+				32934A5A346D1F575C739E03 /* ggml-opt.cpp */,
+				1409D1B81F5397399B66FC93 /* ggml-quants.c */,
+				3505054FE86EB454A006BF89 /* ggml-threading.cpp */,
+				20C0D6D2D70F7869ACF87F73 /* ggml.c */,
+				56A45243CAE9340ACC48692D /* ggml.cpp */,
+				71857C09F7D58C4BFB6B1D6C /* gguf.cpp */,
+				B4F88B47A6CD77D6622EC1F9 /* ggml-blas */,
+				4B8CAA1CC52FCBD8778BB3D7 /* ggml-cpu */,
+				9BAB6152CFC5A6E2BE365B41 /* ggml-metal */,
+				EE18D3677872E91AF5A9A4A6 /* ggml-rpc */,
+			);
+			name = src;
+			path = Vendor/llama.cpp/ggml/src;
+			sourceTree = "<group>";
+		};
+		E7E34EC109C456A4462708E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8F1D264A360DAD462974EEF /* Accelerate.framework */,
+				5F5406BE0BFDF48C7E3A7133 /* Metal.framework */,
+				2953554828B7A1CD6B0F7DD9 /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE18D3677872E91AF5A9A4A6 /* ggml-rpc */ = {
+			isa = PBXGroup;
+			children = (
+				5D2CBA85E56C80CA829F7380 /* ggml-rpc.cpp */,
+			);
+			path = "ggml-rpc";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E79C46F315E8313AC15B500 /* KeyboardAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8874364F19DAD6B9FC3F7B4 /* Build configuration list for PBXNativeTarget "KeyboardAI" */;
+			buildPhases = (
+				FD7F6133BCF68BE5B9330624 /* Sources */,
+				B5AAA4518703492161FB7433 /* Resources */,
+				D0974FE7943DC95A55ADFFB9 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16C0A28688FFFAF8C9A57BEC /* PBXTargetDependency */,
+				24B36A7B2DE37DDCE301A871 /* PBXTargetDependency */,
+			);
+			name = KeyboardAI;
+			packageProductDependencies = (
+			);
+			productName = KeyboardAI;
+			productReference = B1CFC669719118C4D9F241D5 /* KeyboardAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53297501F8B9900AB594802D /* Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D835A04318BF8EAB7BDEEB /* Build configuration list for PBXNativeTarget "Share" */;
+			buildPhases = (
+				7C31500BCC0F0431F114D55E /* Sources */,
+				E3920C5EFC24BAB6ACA1E973 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Share;
+			packageProductDependencies = (
+			);
+			productName = Share;
+			productReference = 49D29E64815B3487F621C1D6 /* Share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BE5464BA58CDE83C22057608 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 598C182787A83DC5C40BA8F7 /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				C568892715048E44A6D703B2 /* Sources */,
+				0ACCA9C6B8DDC75CEB97CD7E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			packageProductDependencies = (
+			);
+			productName = Keyboard;
+			productReference = C68C3E24FD93490A6816AACA /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C1EB2F0338721D1FE063F50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4E79C46F315E8313AC15B500 = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+					};
+					53297501F8B9900AB594802D = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+					};
+					BE5464BA58CDE83C22057608 = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+					};
+				};
+			};
+			buildConfigurationList = 257923EA42456C0505D931EF /* Build configuration list for PBXProject "KeyboardAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 27871C3C17FBD002607486AA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE5464BA58CDE83C22057608 /* Keyboard */,
+				4E79C46F315E8313AC15B500 /* KeyboardAI */,
+				53297501F8B9900AB594802D /* Share */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5AAA4518703492161FB7433 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FBBDD080CA6FD958AE5DA5 /* gemma-3-270m-it.gguf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C31500BCC0F0431F114D55E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB91816A204BBE4F48D9936 /* LLMBridge.swift in Sources */,
+				B543CA8972582C512A2ABB84 /* LocalLLM.swift in Sources */,
+				9140184328DC62E439F9AC19 /* PromptBuilder.swift in Sources */,
+				7CBEC865B43CE191E28EA057 /* ReplyActionViewController.swift in Sources */,
+				6E35C1E606D1CE790B936303 /* SharedModels.swift in Sources */,
+				678E50D03F730EFB7EBF8D52 /* amx.cpp in Sources */,
+				B58F480C920114E196DB942C /* binary-ops.cpp in Sources */,
+				0E0DC199155260B775B4E832 /* cpu-feats.cpp in Sources */,
+				8D6597C6B22B556774963C65 /* ggml-alloc.c in Sources */,
+				CEB721F4CD75413D7BA5F632 /* ggml-backend-reg.cpp in Sources */,
+				BA986BBF278E5640F24B2F5D /* ggml-backend.cpp in Sources */,
+				B7641DC8559D5DC8C7505F79 /* ggml-blas.cpp in Sources */,
+				0005FEF25C8093C9E64AB36D /* ggml-cpu.c in Sources */,
+				61DDFA1E6958D3AEC8DD4260 /* ggml-cpu.cpp in Sources */,
+				06089E7747CA87E49A325E37 /* ggml-metal.m in Sources */,
+				4A720EC232DC8B304CA4282A /* ggml-metal.metal in Sources */,
+				40E88EA6B4008525CD4BD564 /* ggml-opt.cpp in Sources */,
+				37D26160ECBC33A844834FCC /* ggml-quants.c in Sources */,
+				6813A20D0482E065D735E69E /* ggml-rpc.cpp in Sources */,
+				3E6FDB86718852EFDF15BFC3 /* ggml-threading.cpp in Sources */,
+				8D315500E4A286466C0BEC66 /* ggml.c in Sources */,
+				7A45D7FAB60F2EF7F9ADE552 /* ggml.cpp in Sources */,
+				2E21591F238652030316F581 /* gguf.cpp in Sources */,
+				29CE80AB23AD0E31D888B119 /* hbm.cpp in Sources */,
+				A7AFB382D487294DB51DC2D1 /* llama-adapter.cpp in Sources */,
+				D6321E53B6F89DA7B8C62094 /* llama-arch.cpp in Sources */,
+				310AC1FE737FEAE06ADA708E /* llama-batch.cpp in Sources */,
+				CEB1D667B59706420A0D77FB /* llama-chat.cpp in Sources */,
+				139C650C607BF40A37121B7F /* llama-context.cpp in Sources */,
+				331A76BEE1B787C7859F8B06 /* llama-cparams.cpp in Sources */,
+				AEE74C8BC61F561E04729107 /* llama-grammar.cpp in Sources */,
+				72ED771840B0FE35261D0A75 /* llama-graph.cpp in Sources */,
+				04CBD678AC1C8DBB8D7DFB67 /* llama-hparams.cpp in Sources */,
+				49560DE29C50E1B3AC0CDDEE /* llama-impl.cpp in Sources */,
+				3B3EDB26B9BCA89FAA318231 /* llama-io.cpp in Sources */,
+				12DFC18E60F184EE39DE7B3D /* llama-kv-cache-unified-iswa.cpp in Sources */,
+				332B34210AED2E670A80AB49 /* llama-kv-cache-unified.cpp in Sources */,
+				923CE8C40557C27D21F3F5A7 /* llama-memory-hybrid.cpp in Sources */,
+				71A93BEACA58DD5FBA618119 /* llama-memory-recurrent.cpp in Sources */,
+				853907E8401055E1D0B5756E /* llama-memory.cpp in Sources */,
+				98CF51145AD13064C387052F /* llama-mmap.cpp in Sources */,
+				BBB08AB84F2D82FF990DD7BD /* llama-model-loader.cpp in Sources */,
+				1A37B686A922FA2FE236B333 /* llama-model-saver.cpp in Sources */,
+				8D1C3ABBF2213721E99C131A /* llama-model.cpp in Sources */,
+				62A66C684847D1B6570DF6D0 /* llama-quant.cpp in Sources */,
+				FF59B84F8B3EB18755FD3BDB /* llama-sampling.cpp in Sources */,
+				D3B7EB7DE431F0873BCF2866 /* llama-vocab.cpp in Sources */,
+				84D9D2D01B8B241F85C5A137 /* llama.cpp in Sources */,
+				E30D281BF79C464620E6CF4C /* llama_wrapper.cpp in Sources */,
+				5BF7AFE9E3D5F54A88F24EF2 /* mmq.cpp in Sources */,
+				681EE282C91C971BF4AAF508 /* ops.cpp in Sources */,
+				91DD8E39B97113909BBCE698 /* quants.c in Sources */,
+				F585FB46AE294876CA45F6E2 /* quants.c in Sources */,
+				1BF638DE81BDA502A33790BA /* repack.cpp in Sources */,
+				8D18E32B0306290E11DE110A /* repack.cpp in Sources */,
+				F34BB094D43DE1526CBF5CA1 /* traits.cpp in Sources */,
+				7CB468B0EF28941B88FFB787 /* unary-ops.cpp in Sources */,
+				D965FF840A00F88375F2EC0D /* unicode-data.cpp in Sources */,
+				C6CDDF65F3D2B8781FE28D32 /* unicode.cpp in Sources */,
+				8BACF10F645B36D8BDBDE12E /* vec.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C568892715048E44A6D703B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412FE4FE1055E486D14DA969 /* KeyboardViewController.swift in Sources */,
+				C32F254CB1046265F21A89B2 /* LLMBridge.swift in Sources */,
+				D3DF7C6FA81284C4C10453E8 /* LocalLLM.swift in Sources */,
+				5001DB3C4E38C94256CFDBB8 /* PromptBuilder.swift in Sources */,
+				AEA77FD5160F9F9F98759DF2 /* SharedModels.swift in Sources */,
+				499520C61A5DD9F855678A6B /* StylePickerView.swift in Sources */,
+				1491C9EBF26B00EB8EA2AF5A /* SuggestionPillView.swift in Sources */,
+				86EA14C4D35DB7F2193F4185 /* amx.cpp in Sources */,
+				F589D4DE19FB455583036377 /* binary-ops.cpp in Sources */,
+				FE4236F923A85A1391B90F12 /* cpu-feats.cpp in Sources */,
+				B3CDADBADF76243504832451 /* ggml-alloc.c in Sources */,
+				6EE3E3D3244B7F56CDDCF5E8 /* ggml-backend-reg.cpp in Sources */,
+				4125D5FD94C9694538DEA3C8 /* ggml-backend.cpp in Sources */,
+				0FF928E7C77E8C67958E4289 /* ggml-blas.cpp in Sources */,
+				EE8FD71B8329A5336CAC1F04 /* ggml-cpu.c in Sources */,
+				26C0556CC2954F4A124964A4 /* ggml-cpu.cpp in Sources */,
+				3AE36B9293618DA220B3A367 /* ggml-metal.m in Sources */,
+				A28DFB20BAB5D86B252E0437 /* ggml-metal.metal in Sources */,
+				D400CD6D1AD332F2D779A21E /* ggml-opt.cpp in Sources */,
+				88EFBE8E6D72C489D300BA60 /* ggml-quants.c in Sources */,
+				AADFA214469E522FCB8E9D9B /* ggml-rpc.cpp in Sources */,
+				2E3E8D906CD8434D7AB3CFCD /* ggml-threading.cpp in Sources */,
+				3F8F34044670D3D97748BECA /* ggml.c in Sources */,
+				B152C4905ADD26EBD55F9C1A /* ggml.cpp in Sources */,
+				EC1F6F5647C4A9156FFFA3E7 /* gguf.cpp in Sources */,
+				310EC431600AD3A704671960 /* hbm.cpp in Sources */,
+				C47A6923D72681AC45549DF5 /* llama-adapter.cpp in Sources */,
+				3F3AD2F1B4229F85B768F10D /* llama-arch.cpp in Sources */,
+				A7F19FC708AD33063386984D /* llama-batch.cpp in Sources */,
+				BC1546A09D14121DF6C5D8DA /* llama-chat.cpp in Sources */,
+				DF02A896D9A845908B7ECB40 /* llama-context.cpp in Sources */,
+				A4BA39BA8F9CE6FCF580EA4C /* llama-cparams.cpp in Sources */,
+				AAB00E6B75F358B915F9B5C6 /* llama-grammar.cpp in Sources */,
+				C075FF86453975CB5D009F7A /* llama-graph.cpp in Sources */,
+				449EC621BF4EB1E6CEC11BCA /* llama-hparams.cpp in Sources */,
+				F907281B7068FB5F226EAC70 /* llama-impl.cpp in Sources */,
+				265A53FBD28135528902C7F5 /* llama-io.cpp in Sources */,
+				6BCC99AA98CCC6C99C568EEE /* llama-kv-cache-unified-iswa.cpp in Sources */,
+				48B508094A103E2CF4DE85F6 /* llama-kv-cache-unified.cpp in Sources */,
+				CDF0B13EBA09F3A110DD2B90 /* llama-memory-hybrid.cpp in Sources */,
+				3178D90267685BB3A6AE1283 /* llama-memory-recurrent.cpp in Sources */,
+				3BF01D7F22AB8FABB20569F2 /* llama-memory.cpp in Sources */,
+				62C043BC64AA7B9356B77E8D /* llama-mmap.cpp in Sources */,
+				15B03622CA5AB8D943DA01FC /* llama-model-loader.cpp in Sources */,
+				716AD278A9B2D344E32B1964 /* llama-model-saver.cpp in Sources */,
+				C591DB8D28FCA5CC48D8232C /* llama-model.cpp in Sources */,
+				9247F3BFAED9DE2423567269 /* llama-quant.cpp in Sources */,
+				2D660759970C0B41B36695D4 /* llama-sampling.cpp in Sources */,
+				780D2A262FBFFE1C9F829219 /* llama-vocab.cpp in Sources */,
+				5B3549F1E827013342858130 /* llama.cpp in Sources */,
+				8133B068D58513DED778275E /* llama_wrapper.cpp in Sources */,
+				EECD8CB74C8690025FEA88F6 /* mmq.cpp in Sources */,
+				4CF868B56182A10FFD6B3BDC /* ops.cpp in Sources */,
+				743C9864FB8C7937AB8ED892 /* quants.c in Sources */,
+				37C2987F89B3FBFB3D0D8A91 /* quants.c in Sources */,
+				918C094C9E2B9C667F8FD091 /* repack.cpp in Sources */,
+				747F11D875139FB85C8851C4 /* repack.cpp in Sources */,
+				F1B024100A8CD82C8DF7835A /* traits.cpp in Sources */,
+				5BD5136DCD222257A98B05B7 /* unary-ops.cpp in Sources */,
+				2510F46AFA2546CFD83BA079 /* unicode-data.cpp in Sources */,
+				FA02BF45B3081982D2F4BB4E /* unicode.cpp in Sources */,
+				B95608E541EC235AC9F0474C /* vec.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7F6133BCF68BE5B9330624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				254F71C025D79403B7C2E7B4 /* KeyboardAIApp.swift in Sources */,
+				2908F4BC0BABE337BF84BB3F /* ModelInstaller.swift in Sources */,
+				9FF8C78F1FA852763034594E /* SettingsView.swift in Sources */,
+				A8320A5A741608383B4D7999 /* SharedModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16C0A28688FFFAF8C9A57BEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE5464BA58CDE83C22057608 /* Keyboard */;
+			targetProxy = 70C0AF3CB3CAE9FDB4AD3A61 /* PBXContainerItemProxy */;
+		};
+		24B36A7B2DE37DDCE301A871 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53297501F8B9900AB594802D /* Share */;
+			targetProxy = 8F28A765A80D16F1F619E92B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A6C73D3135DC13EC465CB84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		30E7EB351C4714A88612BF1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)\nGGML_USE_METAL=1\nGGML_USE_ACCELERATE=1\nGGML_BLAS_USE_ACCELERATE=1\nGGML_VERSION=\\\"dev\\\"\nGGML_COMMIT=\\\"local\\\"\n";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor",
+					"$(SRCROOT)/Vendor/llama.cpp/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src/ggml-cpu",
+				);
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor",
+					"$(SRCROOT)/Vendor/llama.cpp/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src/ggml-cpu",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourco.KeyboardAI.Share;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "KeyboardExtension/KeyboardAI-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40912ADC22B181010BCD1F5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = KeyboardExtension/KeyboardExtension.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)\nGGML_USE_METAL=1\nGGML_USE_ACCELERATE=1\nGGML_BLAS_USE_ACCELERATE=1\nGGML_VERSION=\\\"dev\\\"\nGGML_COMMIT=\\\"local\\\"\n";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor",
+					"$(SRCROOT)/Vendor/llama.cpp/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src/ggml-cpu",
+				);
+				INFOPLIST_FILE = KeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor",
+					"$(SRCROOT)/Vendor/llama.cpp/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src/ggml-cpu",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourco.KeyboardAI.Keyboard;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "KeyboardExtension/KeyboardAI-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BF4FD3226BCCB5D635C5815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = KeyboardExtension/KeyboardExtension.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)\nGGML_USE_METAL=1\nGGML_USE_ACCELERATE=1\nGGML_BLAS_USE_ACCELERATE=1\nGGML_VERSION=\\\"dev\\\"\nGGML_COMMIT=\\\"local\\\"\n";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor",
+					"$(SRCROOT)/Vendor/llama.cpp/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src/ggml-cpu",
+				);
+				INFOPLIST_FILE = KeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor",
+					"$(SRCROOT)/Vendor/llama.cpp/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src/ggml-cpu",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourco.KeyboardAI.Keyboard;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "KeyboardExtension/KeyboardAI-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D8CB49BE0604B2F9B1DFBE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		93E80EFD5CF693415EB34B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)\nGGML_USE_METAL=1\nGGML_USE_ACCELERATE=1\nGGML_BLAS_USE_ACCELERATE=1\nGGML_VERSION=\\\"dev\\\"\nGGML_COMMIT=\\\"local\\\"\n";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor",
+					"$(SRCROOT)/Vendor/llama.cpp/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src/ggml-cpu",
+				);
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor",
+					"$(SRCROOT)/Vendor/llama.cpp/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/include",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src",
+					"$(SRCROOT)/Vendor/llama.cpp/ggml/src/ggml-cpu",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourco.KeyboardAI.Share;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "KeyboardExtension/KeyboardAI-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B5CBA5CEB4CBC821836550C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourco.KeyboardAI;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3C522E7CB657F693995D965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourco.KeyboardAI;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		257923EA42456C0505D931EF /* Build configuration list for PBXProject "KeyboardAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A6C73D3135DC13EC465CB84 /* Debug */,
+				6D8CB49BE0604B2F9B1DFBE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		598C182787A83DC5C40BA8F7 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40912ADC22B181010BCD1F5A /* Debug */,
+				5BF4FD3226BCCB5D635C5815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E1D835A04318BF8EAB7BDEEB /* Build configuration list for PBXNativeTarget "Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E7EB351C4714A88612BF1B /* Debug */,
+				93E80EFD5CF693415EB34B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E8874364F19DAD6B9FC3F7B4 /* Build configuration list for PBXNativeTarget "KeyboardAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3C522E7CB657F693995D965 /* Debug */,
+				9B5CBA5CEB4CBC821836550C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C1EB2F0338721D1FE063F50 /* Project object */;
+}
