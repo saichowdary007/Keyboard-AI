@@ -11,38 +11,33 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Server")) {
-                    TextField("API Endpoint", text: $endpoint)
-                        .textInputAutocapitalization(.never)
-                        .autocorrectionDisabled(true)
-                    SecureField("API Key (optional)", text: $apiKey)
-                    Button("Save") { save() }
-                }
-                Section(header: Text("Offline")) {
+                Section(header: Text("Offline (Recommended)")) {
                     Toggle("Use local model (offline)", isOn: $useLocal)
                         .onChange(of: useLocal) { _ in save() }
-                    Text("Place your GGUF model in the app bundle. Open the app once to install it into the shared container for the keyboard.")
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
-                }
-                Section(header: Text("Local Model")) {
-                    Text(installStatus.isEmpty ? "Checking…" : installStatus)
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
-                    Button(installing ? "Installing…" : "Install/Repair Local Model") {
-                        installing = true
-                        DispatchQueue.global(qos: .userInitiated).async {
-                            do { _ = try ModelInstaller.installIfNeeded() } catch {
-                                print("[ModelInstaller] UI install error: \(error)")
-                            }
-                            DispatchQueue.main.async {
-                                installing = false
-                                refreshStatus()
-                            }
-                        }
+                    HStack(spacing: 8) {
+                        Image(systemName: statusIconName())
+                            .foregroundColor(statusIconColor())
+                        Text(installStatus.isEmpty ? "Checking…" : installStatus)
+                            .font(.footnote)
+                            .foregroundColor(.secondary)
                     }
-                    .disabled(installing)
+                    HStack {
+                        Button(installing ? "Installing…" : "Install/Repair Local Model") { installOrRepair() }
+                            .disabled(installing)
+                        Spacer()
+                        Button("Reset Installed Model", role: .destructive) { resetModel() }
+                    }
                 }
+
+                Section(header: Text("Server (Fallback for future)"), footer: Text("You can leave these empty to stay fully offline. When enabled in a future update, the keyboard can fall back to your server if the local model is unavailable.").font(.footnote)) {
+                    TextField("API Endpoint (https://example.com/api)", text: $endpoint)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled(true)
+                        .keyboardType(.URL)
+                    SecureField("API Key (optional)", text: $apiKey)
+                    Button("Save Server Settings") { save() }
+                }
+
                 Section(header: Text("Privacy")) {
                     Text("Full Access is required for online rewriting. We never log keystrokes.")
                 }
@@ -50,6 +45,18 @@ struct SettingsView: View {
             .navigationTitle("KeyboardAI Settings")
             .onAppear { refreshStatus() }
         }
+    }
+
+    private func statusIconName() -> String {
+        if installStatus.hasPrefix("Installed:") { return "checkmark.seal.fill" }
+        if installStatus.hasPrefix("Bundled:") { return "tray.and.arrow.down.fill" }
+        return "exclamationmark.triangle.fill"
+    }
+
+    private func statusIconColor() -> Color {
+        if installStatus.hasPrefix("Installed:") { return .green }
+        if installStatus.hasPrefix("Bundled:") { return .blue }
+        return .orange
     }
 
     private func save() {
@@ -65,6 +72,32 @@ struct SettingsView: View {
         }
         d.set(apiKey, forKey: DEFAULT_API_KEY_KEY)
         d.set(useLocal, forKey: USE_LOCAL_MODEL_KEY)
+    }
+
+    private func installOrRepair() {
+        installing = true
+        DispatchQueue.global(qos: .userInitiated).async {
+            do { _ = try ModelInstaller.installIfNeeded() } catch {
+                print("[ModelInstaller] UI install error: \(error)")
+            }
+            DispatchQueue.main.async {
+                installing = false
+                refreshStatus()
+            }
+        }
+    }
+
+    private func resetModel() {
+        installing = true
+        DispatchQueue.global(qos: .userInitiated).async {
+            do { try ModelInstaller.resetInstalledModel() } catch {
+                print("[ModelInstaller] Reset error: \(error)")
+            }
+            DispatchQueue.main.async {
+                installing = false
+                refreshStatus()
+            }
+        }
     }
 
     private func refreshStatus() {

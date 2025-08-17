@@ -113,9 +113,7 @@ targets:
         compilerFlags: "-fno-objc-arc"
       # llama.cpp sources are not compiled by default; wrapper builds in stub mode without headers
     resources:
-      - path: App/Models/gemma-3-270m-it.gguf
-      - path: App/Models/model.gguf
-      - path: App/Models/model.bin
+      - path: App/Models
     info:
       path: KeyboardExtension/Info.plist
     entitlements:
@@ -206,9 +204,7 @@ targets:
       - sdk: MetalKit.framework
       - sdk: Accelerate.framework
     resources:
-      - path: App/Models/gemma-3-270m-it.gguf
-      - path: App/Models/model.gguf
-      - path: App/Models/model.bin
+      - path: App/Models
     info:
       path: ShareExtension/Info.plist
     entitlements:

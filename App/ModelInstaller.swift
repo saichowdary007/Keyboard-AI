@@ -67,4 +67,15 @@ struct ModelInstaller {
         print("[ModelInstaller] Installed: \(dst.lastPathComponent) (\(fileSizeString(dst)))")
         return dst
     }
+
+    /// Remove any installed .gguf from the App Group to allow clean reinstall
+    static func resetInstalledModel() throws {
+        let fm = FileManager.default
+        let groupURL = try appGroupURL()
+        let items = try fm.contentsOfDirectory(at: groupURL, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles])
+        for url in items where url.pathExtension.lowercased() == "gguf" {
+            try? fm.removeItem(at: url)
+        }
+        print("[ModelInstaller] Reset: removed installed GGUF(s) from App Group")
+    }
 }

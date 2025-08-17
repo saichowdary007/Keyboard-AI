@@ -1,18 +1,22 @@
 import UIKit
 
 final class KeyboardViewController: UIInputViewController {
-    private let toggleButton = UIButton(type: .system)
+    private let modeControl = UISegmentedControl(items: ["Enhance", "Reply"])
     private let applyButton = UIButton(type: .system)
     private let clipboardButton = UIButton(type: .system)
+    private let styleButton = UIButton(type: .system)
     private let tipLabel = UILabel()
+    private let spinner = UIActivityIndicatorView(style: .medium)
 
     private let llm = LLMBridge()
     private let local = LocalLLM()
     private let defaults = UserDefaults(suiteName: APP_GROUP_ID)!
-    private var useLocal = true // offline-first; can be toggled via settings later
+    private var useLocal = true // offline-first; configurable via settings
 
-    private var mode: Mode = .enhance { didSet { updateToggleTitle(); saveStickyPreference() } }
-    private var style: Style = .formal { didSet { saveStickyPreference() } }
+    private var isGenerating = false { didSet { updateGeneratingState() } }
+
+    private var mode: Mode = .enhance { didSet { updateModeUI(); saveStickyPreference() } }
+    private var style: Style = .formal { didSet { updateStyleUI(); saveStickyPreference() } }
     private var tipUsesRemaining: Int = 5
 
     private var pill: SuggestionPill?
@@ -25,33 +29,24 @@ final class KeyboardViewController: UIInputViewController {
         loadStickyPreferenceForCurrentContext()
         checkForGeneratedReplySuggestion()
         maybeShowClipboardSuggestion()
-        // Enforce offline-only: ignore settings toggle and always prefer local
-        useLocal = true
+
+        // Respect Settings toggle (defaults to true)
+        useLocal = (defaults.object(forKey: USE_LOCAL_MODEL_KEY) as? Bool) ?? true
+
         // Warm-start local model to reduce first-token latency.
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in self?.local.initializeIfNeeded() }
 
-        // Temporary debug code - bundle structure and model presence
+        // Debug bundle listing for GGUF presence
         if let resourcePath = Bundle.main.resourcePath {
             let resourceURL = URL(fileURLWithPath: resourcePath)
             let fm = FileManager.default
-
-            print("=== BUNDLE DEBUG ===")
-            print("Bundle path: \(resourcePath)")
-
-            // Check for model.gguf specifically
+            print("=== BUNDLE DEBUG ===\nBundle path: \(resourcePath)")
             let modelPath = resourceURL.appendingPathComponent("model.gguf")
-            print("Looking for model at: \(modelPath.path)")
-            print("Model exists: \(fm.fileExists(atPath: modelPath.path))")
-
-            // List all .gguf files
+            print("Looking for model at: \(modelPath.path); exists=\(fm.fileExists(atPath: modelPath.path))")
             if let enumerator = fm.enumerator(at: resourceURL, includingPropertiesForKeys: nil) {
                 var ggufFiles: [String] = []
-                for case let url as URL in enumerator {
-                    if url.pathExtension.lowercased() == "gguf" {
-                        ggufFiles.append(url.path)
-                    }
-                }
-                print("All GGUF files found: \(ggufFiles)")
+                for case let url as URL in enumerator where url.pathExtension.lowercased() == "gguf" { ggufFiles.append(url.lastPathComponent) }
+                print("GGUF in bundle: \(ggufFiles)")
             }
             print("=== END BUNDLE DEBUG ===")
         }
@@ -65,62 +60,87 @@ final class KeyboardViewController: UIInputViewController {
 
     private func setupUI() {
         view.backgroundColor = .systemBackground
-        toggleButton.titleLabel?.font = .boldSystemFont(ofSize: 16)
-        applyButton.setTitle("Apply", for: .normal)
-        clipboardButton.setTitle("Use Clipboard", for: .normal)
 
+        modeControl.selectedSegmentIndex = 0
+        modeControl.addTarget(self, action: #selector(modeChanged), for: .valueChanged)
+
+        applyButton.setTitle("Apply", for: .normal)
+        applyButton.titleLabel?.font = .boldSystemFont(ofSize: 16)
         applyButton.addTarget(self, action: #selector(applyTransform), for: .touchUpInside)
+
+        clipboardButton.setTitle("Use Clipboard", for: .normal)
         clipboardButton.addTarget(self, action: #selector(replyFromClipboard), for: .touchUpInside)
 
-        tipLabel.text = "Tap to change"
+        styleButton.setTitle("Formal ▾", for: .normal)
+        styleButton.addTarget(self, action: #selector(openStylePicker), for: .touchUpInside)
+
+        tipLabel.text = "Tap style to change • Swipe up"
         tipLabel.font = .systemFont(ofSize: 12)
         tipLabel.alpha = 0.75
 
-        let row = UIStackView(arrangedSubviews: [toggleButton, applyButton, clipboardButton])
-        row.axis = .horizontal; row.spacing = 10; row.alignment = .center
-        let root = UIStackView(arrangedSubviews: [row, tipLabel])
-        root.axis = .vertical; root.spacing = 6; root.alignment = .center
+        let topRow = UIStackView(arrangedSubviews: [modeControl, styleButton])
+        topRow.axis = .horizontal
+        topRow.spacing = 10
+        topRow.alignment = .center
+
+        let bottomRow = UIStackView(arrangedSubviews: [applyButton, clipboardButton, spinner])
+        bottomRow.axis = .horizontal
+        bottomRow.spacing = 10
+        bottomRow.alignment = .center
+
+        let root = UIStackView(arrangedSubviews: [topRow, bottomRow, tipLabel])
+        root.axis = .vertical
+        root.spacing = 8
+        root.alignment = .fill
         root.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(root)
         NSLayoutConstraint.activate([
             root.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            root.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            root.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            root.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor, constant: 8),
+            root.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor, constant: -8)
         ])
-        updateToggleTitle(); updateTipVisibility()
+
+        spinner.hidesWhenStopped = true
+
+        updateModeUI(); updateStyleUI(); updateTipVisibility(); updateGeneratingState()
     }
 
     private func wireGestures() {
-        let single = UITapGestureRecognizer(target: self, action: #selector(didSingleTapToggle))
-        single.numberOfTapsRequired = 1
-        let double = UITapGestureRecognizer(target: self, action: #selector(didDoubleTapToggle))
-        double.numberOfTapsRequired = 2
-        single.require(toFail: double)
-        toggleButton.addGestureRecognizer(single)
-        toggleButton.addGestureRecognizer(double)
-
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(openStylePicker))
         swipeUp.direction = .up
-        toggleButton.addGestureRecognizer(swipeUp)
+        view.addGestureRecognizer(swipeUp)
 
         let long = UILongPressGestureRecognizer(target: self, action: #selector(openStylePicker))
-        toggleButton.addGestureRecognizer(long)
+        view.addGestureRecognizer(long)
     }
 
-    private func updateToggleTitle() {
-        toggleButton.setTitle(mode == .enhance ? "Enhance" : "Reply", for: .normal)
+    private func updateModeUI() {
+        modeControl.selectedSegmentIndex = (mode == .enhance) ? 0 : 1
     }
 
-    @objc private func didSingleTapToggle() {
-        mode = (mode == .enhance) ? .reply : .enhance
+    private func updateStyleUI() {
+        let title = style.rawValue.capitalized + " ▾"
+        styleButton.setTitle(title, for: .normal)
+    }
+
+    private func updateGeneratingState() {
+        applyButton.isEnabled = !isGenerating
+        clipboardButton.isEnabled = !isGenerating
+        modeControl.isEnabled = !isGenerating
+        styleButton.isEnabled = !isGenerating
+        if isGenerating { spinner.startAnimating() } else { spinner.stopAnimating() }
+    }
+
+    private func updateTipVisibility() { tipLabel.isHidden = (tipUsesRemaining <= 0) }
+
+    @objc private func modeChanged() {
+        mode = (modeControl.selectedSegmentIndex == 0) ? .enhance : .reply
         UIImpactFeedbackGenerator(style: .light).impactOccurred()
         decrementTip()
     }
 
-    @objc private func didDoubleTapToggle() { openStylePicker() }
-
     @objc private func openStylePicker() {
-        // Keyboard extensions cannot present UIAlertController.
-        // Use an inline picker view instead.
         let picker = StylePickerView()
         picker.onSelect = { [weak self] (s: Style) in
             self?.style = s
@@ -142,8 +162,6 @@ final class KeyboardViewController: UIInputViewController {
         defaults.set(tipUsesRemaining, forKey: TIP_COUNTER_KEY)
         updateTipVisibility()
     }
-
-    private func updateTipVisibility() { tipLabel.isHidden = (tipUsesRemaining <= 0) }
 
     // MARK: - Sticky preferences by traits
     private func currentStickyKey() -> StickyKey {
@@ -214,14 +232,15 @@ final class KeyboardViewController: UIInputViewController {
         let after  = proxy.documentContextAfterInput ?? ""
         let source = (mode == .enhance) ? before : replySource(from: proxy)
         UISelectionFeedbackGenerator().selectionChanged()
+        isGenerating = true
         runTransform(source, mode: mode, style: style) { result in
             DispatchQueue.main.async {
+                self.isGenerating = false
                 switch result {
                 case .success(let output):
                     for _ in 0..<before.count { proxy.deleteBackward() }
                     proxy.insertText(output + after)
                 case .failure(let err):
-                    // Provide clearer guidance when the local model isn't installed yet.
                     if let e = err as NSError?, e.domain == "LLM" && e.code == 1001 {
                         self.presentErrorBanner("Local model not available. Open the KeyboardAI app once to install the bundled GGUF model, then try again.")
                     } else {
@@ -236,8 +255,10 @@ final class KeyboardViewController: UIInputViewController {
         guard self.hasFullAccess else { presentErrorBanner("Enable Full Access in Keyboard settings to use the clipboard"); return }
         guard let s = UIPasteboard.general.string, !s.isEmpty else { presentErrorBanner("Clipboard is empty"); return }
         let cleaned = stripQuotesAndSigs(s)
+        isGenerating = true
         runTransform(cleaned, mode: .reply, style: style) { result in
             DispatchQueue.main.async {
+                self.isGenerating = false
                 switch result {
                 case .success(let out): self.textDocumentProxy.insertText(out)
                 case .failure(let e):   self.presentErrorBanner("Reply failed: \(e.localizedDescription)")
@@ -279,7 +300,7 @@ final class KeyboardViewController: UIInputViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { label.removeFromSuperview() }
     }
 
-    // MARK: - Routing: local first, fallback to server
+    // MARK: - Routing: local first, optional server fallback (disabled by default)
     private func runTransform(_ input: String, mode: Mode, style: Style, completion: @escaping (Result<String, Error>) -> Void) {
         if useLocal {
             let prompt = PromptBuilder.prompt(text: input, mode: mode, style: style)
@@ -287,8 +308,12 @@ final class KeyboardViewController: UIInputViewController {
                 switch res {
                 case .success(let s): completion(.success(s))
                 case .failure:
-                    // Offline-only mode: do not fallback to server
-                    completion(.failure(NSError(domain: "LLM", code: 1001, userInfo: [NSLocalizedDescriptionKey: "Local model unavailable"])) )
+                    // Offline-default behavior: if the user later disables offline-only in settings, allow fallback
+                    if let self = self, (self.defaults.object(forKey: USE_LOCAL_MODEL_KEY) as? Bool) == false {
+                        self.llm.transform(text: input, mode: mode, style: style, completion: completion)
+                    } else {
+                        completion(.failure(NSError(domain: "LLM", code: 1001, userInfo: [NSLocalizedDescriptionKey: "Local model unavailable"])) )
+                    }
                 }
             }
         } else {
