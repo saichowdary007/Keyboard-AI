@@ -15,11 +15,80 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yourco.KeyboardAI
+        SWIFT_OBJC_BRIDGING_HEADER: KeyboardExtension/KeyboardAI-Bridging-Header.h
+        OTHER_LDFLAGS: -ObjC
+        CLANG_CXX_LANGUAGE_STANDARD: "c++17"
+        HEADER_SEARCH_PATHS:
+          - "$(SRCROOT)/Vendor"
+          - "$(SRCROOT)/Vendor/llama.cpp/include"
+          - "$(SRCROOT)/Vendor/llama.cpp/ggml/include"
+          - "$(SRCROOT)/Vendor/llama.cpp/ggml/src"
+          - "$(SRCROOT)/Vendor/llama.cpp/ggml/src/ggml-cpu"
+        MTL_HEADER_SEARCH_PATHS:
+          - "$(SRCROOT)/Vendor"
+          - "$(SRCROOT)/Vendor/llama.cpp/include"
+          - "$(SRCROOT)/Vendor/llama.cpp/ggml/include"
+          - "$(SRCROOT)/Vendor/llama.cpp/ggml/src"
+          - "$(SRCROOT)/Vendor/llama.cpp/ggml/src/ggml-cpu"
+        GCC_PREPROCESSOR_DEFINITIONS: |
+          $(inherited)
+          GGML_USE_METAL=1
+          GGML_USE_ACCELERATE=1
+          GGML_BLAS_USE_ACCELERATE=1
+          GGML_VERSION=\"dev\"
+          GGML_COMMIT=\"local\"
     sources:
       - path: App
       - path: Shared
+      - path: KeyboardExtension
+        includes:
+          - LocalLLM.swift
+          - PromptBuilder.swift
+      - path: Vendor
+        includes:
+          - llama_wrapper.cpp
+          - llama_wrapper.h
+      - path: Vendor/llama.cpp/src
+        includes:
+          - "**/*.c"
+          - "**/*.cc"
+          - "**/*.cpp"
+          - "**/*.m"
+          - "**/*.mm"
+          - "**/*.S"
+      - path: Vendor/llama.cpp/ggml/src
+        includes:
+          - "**/*.c"
+          - "**/*.cc"
+          - "**/*.cpp"
+          - "**/*.m"
+          - "**/*.mm"
+          - "**/*.S"
+          - "**/*.metal"
         excludes:
-          - LLMBridge.swift
+          - "ggml-cuda/**"
+          - "ggml-opencl/**"
+          - "ggml-hip/**"
+          - "ggml-cann/**"
+          - "ggml-musa/**"
+          - "ggml-vulkan/**"
+          - "ggml-webgpu/**"
+          - "ggml-sycl/**"
+          - "ggml-cpu/llamafile/**"
+          - "ggml-cpu/arch/x86/**"
+          - "ggml-cpu/arch/wasm/**"
+          - "ggml-cpu/arch/s390/**"
+          - "ggml-cpu/arch/loongarch/**"
+          - "ggml-cpu/arch/powerpc/**"
+          - "ggml-cpu/arch/riscv/**"
+          - "ggml-zdnn/**"
+          - "ggml-cpu/kleidiai/**"
+      - path: Vendor/llama.cpp/ggml/src/ggml-metal/ggml-metal.m
+        compilerFlags: "-fno-objc-arc"
+    dependencies:
+      - sdk: Metal.framework
+      - sdk: MetalKit.framework
+      - sdk: Accelerate.framework
     resources:
       - path: App/Models
     info:

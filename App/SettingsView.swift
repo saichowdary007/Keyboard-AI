@@ -38,6 +38,10 @@ struct SettingsView: View {
                     Button("Save Server Settings") { save() }
                 }
 
+                Section(header: Text("Diagnostics")) {
+                    NavigationLink(destination: QuickTestView()) { Text("Quick Test") }
+                }
+
                 Section(header: Text("Privacy")) {
                     Text("Full Access is required for online rewriting. We never log keystrokes.")
                 }
