@@ -39,6 +39,15 @@ build/
 *.log
 *.tmp
 *.swp
+# Model and large binary files
+App/Models/model.bin
+*.bin
+*.gguf
+# Compiled/intermediate files
+*.d
+*.pcm
+*.dia
+*.scan
 *.swo
 
 # Vendor build outputs (if any local builds are produced)
