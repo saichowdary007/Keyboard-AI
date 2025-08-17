@@ -1,78 +1,78 @@
 {
   "" : {
-    "diagnostics" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/Keyboard-master.dia",
-    "emit-module-dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/Keyboard-master-emit-module.d",
-    "emit-module-diagnostics" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/Keyboard-master-emit-module.dia",
-    "swift-dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/Keyboard-master.swiftdeps"
+    "diagnostics" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/Keyboard-master.dia",
+    "emit-module-dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/Keyboard-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/Keyboard-master-emit-module.dia",
+    "swift-dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/Keyboard-master.swiftdeps"
   },
-  "/Users/simba/Documents/keyboard ai/KeyboardExtension/KeyboardViewController.swift" : {
-    "const-values" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.swiftconstvalues",
-    "dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.d",
-    "diagnostics" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.dia",
+  "/Users/simba/Documents/Keyboard AI/KeyboardExtension/KeyboardViewController.swift" : {
+    "const-values" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.swiftconstvalues",
+    "dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.d",
+    "diagnostics" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.dia",
     "index-unit-output-path" : "/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.o",
-    "llvm-bc" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.bc",
-    "object" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.o",
-    "swift-dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.swiftdeps",
-    "swiftmodule" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController~partial.swiftmodule"
+    "llvm-bc" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.bc",
+    "object" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.o",
+    "swift-dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController.swiftdeps",
+    "swiftmodule" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/KeyboardViewController~partial.swiftmodule"
   },
-  "/Users/simba/Documents/keyboard ai/KeyboardExtension/LocalLLM.swift" : {
-    "const-values" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.swiftconstvalues",
-    "dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.d",
-    "diagnostics" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.dia",
+  "/Users/simba/Documents/Keyboard AI/KeyboardExtension/LocalLLM.swift" : {
+    "const-values" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.swiftconstvalues",
+    "dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.d",
+    "diagnostics" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.dia",
     "index-unit-output-path" : "/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.o",
-    "llvm-bc" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.bc",
-    "object" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.o",
-    "swift-dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.swiftdeps",
-    "swiftmodule" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM~partial.swiftmodule"
+    "llvm-bc" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.bc",
+    "object" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.o",
+    "swift-dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM.swiftdeps",
+    "swiftmodule" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LocalLLM~partial.swiftmodule"
   },
-  "/Users/simba/Documents/keyboard ai/KeyboardExtension/PromptBuilder.swift" : {
-    "const-values" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.swiftconstvalues",
-    "dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.d",
-    "diagnostics" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.dia",
+  "/Users/simba/Documents/Keyboard AI/KeyboardExtension/PromptBuilder.swift" : {
+    "const-values" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.swiftconstvalues",
+    "dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.d",
+    "diagnostics" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.dia",
     "index-unit-output-path" : "/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.o",
-    "llvm-bc" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.bc",
-    "object" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.o",
-    "swift-dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.swiftdeps",
-    "swiftmodule" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder~partial.swiftmodule"
+    "llvm-bc" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.bc",
+    "object" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.o",
+    "swift-dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder.swiftdeps",
+    "swiftmodule" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/PromptBuilder~partial.swiftmodule"
   },
-  "/Users/simba/Documents/keyboard ai/KeyboardExtension/StylePickerView.swift" : {
-    "const-values" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.swiftconstvalues",
-    "dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.d",
-    "diagnostics" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.dia",
+  "/Users/simba/Documents/Keyboard AI/KeyboardExtension/StylePickerView.swift" : {
+    "const-values" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.swiftconstvalues",
+    "dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.d",
+    "diagnostics" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.dia",
     "index-unit-output-path" : "/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.o",
-    "llvm-bc" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.bc",
-    "object" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.o",
-    "swift-dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.swiftdeps",
-    "swiftmodule" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView~partial.swiftmodule"
+    "llvm-bc" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.bc",
+    "object" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.o",
+    "swift-dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView.swiftdeps",
+    "swiftmodule" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/StylePickerView~partial.swiftmodule"
   },
-  "/Users/simba/Documents/keyboard ai/KeyboardExtension/SuggestionPillView.swift" : {
-    "const-values" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.swiftconstvalues",
-    "dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.d",
-    "diagnostics" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.dia",
+  "/Users/simba/Documents/Keyboard AI/KeyboardExtension/SuggestionPillView.swift" : {
+    "const-values" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.swiftconstvalues",
+    "dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.d",
+    "diagnostics" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.dia",
     "index-unit-output-path" : "/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.o",
-    "llvm-bc" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.bc",
-    "object" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.o",
-    "swift-dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.swiftdeps",
-    "swiftmodule" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView~partial.swiftmodule"
+    "llvm-bc" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.bc",
+    "object" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.o",
+    "swift-dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView.swiftdeps",
+    "swiftmodule" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SuggestionPillView~partial.swiftmodule"
   },
-  "/Users/simba/Documents/keyboard ai/Shared/LLMBridge.swift" : {
-    "const-values" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.swiftconstvalues",
-    "dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.d",
-    "diagnostics" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.dia",
+  "/Users/simba/Documents/Keyboard AI/Shared/LLMBridge.swift" : {
+    "const-values" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.swiftconstvalues",
+    "dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.d",
+    "diagnostics" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.dia",
     "index-unit-output-path" : "/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.o",
-    "llvm-bc" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.bc",
-    "object" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.o",
-    "swift-dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.swiftdeps",
-    "swiftmodule" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge~partial.swiftmodule"
+    "llvm-bc" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.bc",
+    "object" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.o",
+    "swift-dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge.swiftdeps",
+    "swiftmodule" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/LLMBridge~partial.swiftmodule"
   },
-  "/Users/simba/Documents/keyboard ai/Shared/SharedModels.swift" : {
-    "const-values" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.swiftconstvalues",
-    "dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.d",
-    "diagnostics" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.dia",
+  "/Users/simba/Documents/Keyboard AI/Shared/SharedModels.swift" : {
+    "const-values" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.swiftconstvalues",
+    "dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.d",
+    "diagnostics" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.dia",
     "index-unit-output-path" : "/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.o",
-    "llvm-bc" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.bc",
-    "object" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.o",
-    "swift-dependencies" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.swiftdeps",
-    "swiftmodule" : "/Users/simba/Documents/keyboard ai/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels~partial.swiftmodule"
+    "llvm-bc" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.bc",
+    "object" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.o",
+    "swift-dependencies" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels.swiftdeps",
+    "swiftmodule" : "/Users/simba/Documents/Keyboard AI/build/KeyboardAI.build/Debug-iphoneos/Keyboard.build/Objects-normal/arm64/SharedModels~partial.swiftmodule"
   }
 }

@@ -1,7 +1,7 @@
-/Users/simba/Documents/keyboard\ ai/KeyboardExtension/KeyboardViewController.swift
-/Users/simba/Documents/keyboard\ ai/Shared/LLMBridge.swift
-/Users/simba/Documents/keyboard\ ai/KeyboardExtension/LocalLLM.swift
-/Users/simba/Documents/keyboard\ ai/KeyboardExtension/PromptBuilder.swift
-/Users/simba/Documents/keyboard\ ai/Shared/SharedModels.swift
-/Users/simba/Documents/keyboard\ ai/KeyboardExtension/StylePickerView.swift
-/Users/simba/Documents/keyboard\ ai/KeyboardExtension/SuggestionPillView.swift
+/Users/simba/Documents/Keyboard\ AI/KeyboardExtension/KeyboardViewController.swift
+/Users/simba/Documents/Keyboard\ AI/Shared/LLMBridge.swift
+/Users/simba/Documents/Keyboard\ AI/KeyboardExtension/LocalLLM.swift
+/Users/simba/Documents/Keyboard\ AI/KeyboardExtension/PromptBuilder.swift
+/Users/simba/Documents/Keyboard\ AI/Shared/SharedModels.swift
+/Users/simba/Documents/Keyboard\ AI/KeyboardExtension/StylePickerView.swift
+/Users/simba/Documents/Keyboard\ AI/KeyboardExtension/SuggestionPillView.swift

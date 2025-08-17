@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/simba/Documents/keyboard\ ai/Vendor/llama.cpp/ggml/src/ggml-cpu/hbm.cpp
+  /Users/simba/Documents/Keyboard\ AI/Vendor/llama.cpp/ggml/src/ggml-cpu/hbm.cpp

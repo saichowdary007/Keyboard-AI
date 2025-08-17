@@ -29,6 +29,32 @@ final class KeyboardViewController: UIInputViewController {
         useLocal = true
         // Warm-start local model to reduce first-token latency.
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in self?.local.initializeIfNeeded() }
+
+        // Temporary debug code - bundle structure and model presence
+        if let resourcePath = Bundle.main.resourcePath {
+            let resourceURL = URL(fileURLWithPath: resourcePath)
+            let fm = FileManager.default
+
+            print("=== BUNDLE DEBUG ===")
+            print("Bundle path: \(resourcePath)")
+
+            // Check for model.gguf specifically
+            let modelPath = resourceURL.appendingPathComponent("model.gguf")
+            print("Looking for model at: \(modelPath.path)")
+            print("Model exists: \(fm.fileExists(atPath: modelPath.path))")
+
+            // List all .gguf files
+            if let enumerator = fm.enumerator(at: resourceURL, includingPropertiesForKeys: nil) {
+                var ggufFiles: [String] = []
+                for case let url as URL in enumerator {
+                    if url.pathExtension.lowercased() == "gguf" {
+                        ggufFiles.append(url.path)
+                    }
+                }
+                print("All GGUF files found: \(ggufFiles)")
+            }
+            print("=== END BUNDLE DEBUG ===")
+        }
     }
 
     override func didReceiveMemoryWarning() {

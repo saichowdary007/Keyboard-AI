@@ -2,9 +2,11 @@ name: KeyboardAI
 options:
   deploymentTarget:
     iOS: "16.0"
+  developmentLanguage: en
 settings:
   base:
     DEVELOPMENT_TEAM: YOUR_TEAM_ID
+    DEVELOPMENT_LANGUAGE: en
 
 targets:
   KeyboardAI:
@@ -68,7 +70,6 @@ targets:
         includes:
           - SharedModels.swift
           - LLMBridge.swift
-          - ModelCopy.swift
       - path: Vendor
         includes:
           - llama_wrapper.cpp
@@ -112,7 +113,9 @@ targets:
         compilerFlags: "-fno-objc-arc"
       # llama.cpp sources are not compiled by default; wrapper builds in stub mode without headers
     resources:
-      - path: App/Models
+      - path: App/Models/gemma-3-270m-it.gguf
+      - path: App/Models/model.gguf
+      - path: App/Models/model.bin
     info:
       path: KeyboardExtension/Info.plist
     entitlements:
@@ -152,7 +155,6 @@ targets:
         includes:
           - SharedModels.swift
           - LLMBridge.swift
-          - ModelCopy.swift
       - path: KeyboardExtension
         includes:
           - LocalLLM.swift
@@ -204,7 +206,9 @@ targets:
       - sdk: MetalKit.framework
       - sdk: Accelerate.framework
     resources:
-      - path: App/Models
+      - path: App/Models/gemma-3-270m-it.gguf
+      - path: App/Models/model.gguf
+      - path: App/Models/model.bin
     info:
       path: ShareExtension/Info.plist
     entitlements:

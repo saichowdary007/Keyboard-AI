@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/simba/Documents/keyboard\ ai/Vendor/llama.cpp/src/llama-io.cpp \
-  /Users/simba/Documents/keyboard\ ai/Vendor/llama.cpp/src/llama-io.h
+  /Users/simba/Documents/Keyboard\ AI/Vendor/llama.cpp/src/llama-io.cpp \
+  /Users/simba/Documents/Keyboard\ AI/Vendor/llama.cpp/src/llama-io.h
