@@ -41,6 +41,8 @@ build/
 *.swp
 # Model and large binary files
 App/Models/model.bin
+App/Models/
+
 *.bin
 *.gguf
 # Compiled/intermediate files
@@ -52,6 +54,7 @@ App/Models/model.bin
 
 # Vendor build outputs (if any local builds are produced)
 Vendor/llama.cpp/build*/
+Vendor/llama.cpp/
 
 # Large local model files (keep placeholder files tracked)
 **/*.gguf

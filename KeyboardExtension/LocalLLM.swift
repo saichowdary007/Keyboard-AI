@@ -85,9 +85,11 @@ final class LocalLLM {
                 // As a last resort, attempt to locate main app bundle and search there (when both targets embed resources)
                 if modelURL == nil {
                     print("[LocalLLM] DEBUG: No model found in extension bundle, searching main app bundle…")
-                    if let extensionPath = Bundle.main.bundlePath as NSString? {
-                        let mainAppPath = extensionPath.deletingLastPathComponent.appending("/KeyboardAI.app")
-                        let mainAppURL = URL(fileURLWithPath: mainAppPath)
+                    if let extensionPath = Bundle.main.bundleURL as URL? {
+                        // Keyboard.appex is inside KeyboardAI.app/PlugIns/Keyboard.appex
+                        // Go up two levels to reach KeyboardAI.app
+                        let mainAppURL = extensionPath.deletingLastPathComponent().deletingLastPathComponent()
+                        print("[LocalLLM] DEBUG: Main app candidate: \(mainAppURL.path)")
                         if let e = fm.enumerator(at: mainAppURL, includingPropertiesForKeys: nil) {
                             for case let url as URL in e where url.pathExtension.lowercased() == "gguf" {
                                 print("[LocalLLM] DEBUG: Found GGUF file in main app: \(url.path)")

@@ -1,5 +1,9 @@
 import SwiftUI
 
+// Temporary shim to tolerate older references using a misspelled symbol.
+// This allows `taaQuickTestView()` call sites to resolve to `QuickTestView()`.
+typealias taaQuickTestView = QuickTestView
+
 struct QuickTestView: View {
     @State private var input: String = ""
     @State private var output: String = ""
